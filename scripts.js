@@ -27,10 +27,11 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+!toggleSidebar()
 })
 
 
-// logic for abou-us toggle
+// logic for about-us toggle
 const toggleLink = document.getElementById('toggle-link');
 
 const about = document.getElementById('about');
@@ -43,6 +44,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+!toggleSidebar()
 })
 
 //logic for interior paints
@@ -97,6 +99,7 @@ productSection.style.display = productSection.style.display === 'block' ? 'none'
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+!toggleSidebar()
 
 })
 
@@ -113,6 +116,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+!toggleSidebar()
 })
  
 const ctaBtn = document.querySelector('.cta-button');
@@ -125,6 +129,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+
 })
 
 //logic to toggle the project section
@@ -141,4 +146,5 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+!toggleSidebar()
 })
