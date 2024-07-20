@@ -319,12 +319,14 @@ font-size:48px;
 color: #25D366; 
 text-decoration: none;
     background-color:white;
+    border:none;
 }
 .iconfb {
             font-size: 48px;
             color: #4267B2;
             text-decoration: none;
     background-color:white;
+    border:none;
 }
 
 /* Media Query for smaller screens */
@@ -333,6 +335,7 @@ text-decoration: none;
         top: 0;
         height: 100%;
         width: 200px;
+        
     }
 body{
 font-size: 1em;
