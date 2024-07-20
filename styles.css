@@ -317,11 +317,14 @@ display:none;
 font-size:48px;
 color: #25D366; 
 text-decoration: none;
+    background-color:white;
 }
 .iconfb {
             font-size: 48px;
             color: #4267B2;
             text-decoration: none;
+    background-color:white;
+}
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
