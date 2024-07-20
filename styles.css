@@ -38,6 +38,7 @@ left:215px;
     width: 90px;
     height: 60px;
     margin-right: 20px;
+    background-color: purple;
 clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
 border-top-left-radius:13px; border-top-right-radius: 13px; border-bottom-left-radius :13px;  border-bottom-right-radius: 13px;
 border:4px solid purple;
@@ -52,7 +53,7 @@ border:4px solid purple;
 border-top-left-radius:13px; border-top-right-radius: 13px; border-bottom-left-radius :13px;  border-bottom-right-radius: 13px;
 clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     display: flex;
-    margin:15px;/*adjust logo*/
+    margin:5px;/*adjust logo*/
     align-items: center;
     justify-content: center;
 }
@@ -94,7 +95,7 @@ clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
 .toggle-btn {
     display: block;
 color:yellow;
-    border: 2px solid yellow;
+    background-color: #333;
     font-size: 36px;
 width:60px;
     padding: 10px;
