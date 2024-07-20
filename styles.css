@@ -32,7 +32,7 @@ z-index: 1000;
 
 .logo,.name,.slogan{
 position:relative;
-left:115px;
+left:215px;
 }
 .logo {
     width: 90px;
@@ -52,6 +52,7 @@ border:4px solid purple;
 border-top-left-radius:13px; border-top-right-radius: 13px; border-bottom-left-radius :13px;  border-bottom-right-radius: 13px;
 clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     display: flex;
+    margin:15px;/*adjust logo*/
     align-items: center;
     justify-content: center;
 }
@@ -92,10 +93,9 @@ clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
 
 .toggle-btn {
     display: block;
-    background-color: purple;
-color:white;
+color:yellow;
     border: 2px solid yellow;
-    font-size: 24px;
+    font-size: 36px;
 width:60px;
     padding: 10px;
     cursor: pointer;
@@ -339,7 +339,7 @@ font-size: 1em;
     }
 #background-para,#vision-para,#goals-para{
 padding: 25px;
-font-size:1em;
+font-size:0.5em;
 }
     .content {
         margin-left: 0;
