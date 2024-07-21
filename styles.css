@@ -113,6 +113,7 @@ footer {
     width: 60px;
     padding: 10px;
     cursor: pointer;
+border:none;
     text-align: center;
     z-index: 1001; /* Ensure it is above other elements */
     position: fixed;
@@ -208,6 +209,11 @@ footer {
     font-size: 2rem;
 }
 
+.about-us h3:hover{
+background-color: yellow;
+color: rgb(123,0,77);
+width: 200px;
+}
 #about {
     display: none;
 }
@@ -276,8 +282,12 @@ footer {
     text-align: left;
     background-color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s, color 0.3s;
 }
-
+.product-item:hover{
+background-color: #fff;
+color: black;
+}
 .product-item img {
     width: 100%;
     border-radius: 5px;
