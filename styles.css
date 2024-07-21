@@ -211,7 +211,7 @@ border:none;
 
 .about-us h3:hover{
 background-color: yellow;
-color: rgb(123,0,77);
+color: rgb(123,0,88);
 width: 200px;
 }
 #about {
@@ -303,7 +303,7 @@ color: black;
 .finished-projects {
     padding: 50px 20px;
     text-align: center;
-    background-color: rgb(123,0,77);
+    background-color: rgb(123,0,88);
     color: white;
     border: 6px solid yellow;
     display: none;
@@ -343,7 +343,7 @@ color: black;
 .contact-form {
     padding: 50px 20px;
     text-align: center;
-   background-color: rgb(123,0,77);
+   background-color: rgb(123,0,88;
     color: white;
     border: 6px solid yellow;
     border-radius: 13px;
