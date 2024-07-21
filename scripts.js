@@ -13,12 +13,12 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     this.reset();
 });
 
-/*/home toggle logic
+//home toggle logic
 const homeToggle = document.getElementById('home-toggle');
-const home = document.getElementById('home')
+//const home = document.getElementById('home')
 
-hometoggle.addEventListener('click', ()=>{
-home.style.display = home.style.display === 'block' ? 'block' :'block';
+homeToggle.addEventListener('click', ()=>{
+//home.style.display = home.style.display === 'block' ? 'block' :'block';
 about.style.display = about.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
@@ -26,7 +26,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
-})*/
+})
 
 
 // logic for abou-us toggle
