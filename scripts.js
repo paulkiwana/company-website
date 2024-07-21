@@ -30,6 +30,24 @@ interior.style.display = interior.style.display === 'none'? 'block':'none';
 productSection.style.display = productSection.style.display === 'block' ? 'none':'block';
 })
 
+//logic for exterior paints
+const exterior = document.getElementById("exterior");
+const extDiv = document.querySelector(".exterior");
+
+extDiv.addEventListener("click",()=>{
+exterior.style.display = exterior.style.display === 'none'? 'block':'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'block';
+})
+
+//logic for texture paints
+const texture = document.getElementById("texture");
+const textDiv = document.querySelector(".texture");
+
+textDiv.addEventListener("click",()=>{
+texture.style.display = texture.style.display === 'none'? 'block':'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'block';
+})
+
 //Logic for toggling the vision, background and goals
 const headings = document.querySelectorAll('h3');
 
@@ -59,6 +77,8 @@ const productSection = document.querySelector('.featured-products')
 product.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 })
  
 const ctaBtn = document.querySelector('.cta-button');
@@ -66,6 +86,8 @@ const ctaBtn = document.querySelector('.cta-button');
 ctaBtn.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 })
 
 //logic to toggle the project section

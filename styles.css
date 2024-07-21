@@ -262,7 +262,7 @@ width: 200px;
     flex-wrap: wrap; /* Ensure products wrap on small screens */
 }
 
-#interior{
+#interior, #exterior, #texture{
  padding: 50px 20px;
     text-align: center;
     background-color: rgb(123,0,88);
@@ -274,6 +274,12 @@ width: 200px;
 
 }
 
+#interior h3,#exterior h3, #texture h3{
+color: yellow;
+}
+#interior p, #exterior p, #texture p{
+font-style: italic;
+}
 .product-item {
     border: 1px solid #ddd;
     padding: 20px;
