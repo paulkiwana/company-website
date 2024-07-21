@@ -110,7 +110,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
-about.style.display = about.style.display === 'none'? 'block':'none';
+about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 })
  
