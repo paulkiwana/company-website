@@ -13,12 +13,35 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     this.reset();
 });
 
+/*/home toggle logic
+const homeToggle = document.getElementById('home-toggle');
+const home = document.getElementById('home')
+
+hometoggle.addEventListener('click', ()=>{
+home.style.display = home.style.display === 'block' ? 'block' :'block';
+about.style.display = about.style.display === 'block'? 'none':'none';
+projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
+contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+})*/
+
+
+// logic for abou-us toggle
 const toggleLink = document.getElementById('toggle-link');
 
 const about = document.getElementById('about');
 
 toggleLink.addEventListener('click',()=>{
 about.style.display = about.style.display === 'none'? 'block':'none';
+projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
+contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 })
 
 //logic for interior paints
@@ -67,6 +90,13 @@ const contact = document.getElementById('contact-toggle')
 const contactForm = document.getElementById('contactForm')
 contact.addEventListener('click', ()=>{
 contactForm.style.display = contactForm.style.display === 'none'? 'block' : 'none';
+projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
+about.style.display = about.style.display === 'block'? 'none':'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+
 })
 
 //logic to toggle product section
@@ -79,6 +109,9 @@ productSection.style.display = productSection.style.display === 'none' ? 'block'
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
+about.style.display = about.style.display === 'none'? 'block':'none';
+contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 })
  
 const ctaBtn = document.querySelector('.cta-button');
@@ -88,6 +121,9 @@ productSection.style.display = productSection.style.display === 'none' ? 'block'
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
+about.style.display = about.style.display === 'block'? 'none':'none';
+contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 })
 
 //logic to toggle the project section
@@ -98,5 +134,10 @@ const projectSection = document.querySelector('.finished-projects')
 
 project.addEventListener('click', ()=>{
 projectSection.style.display = projectSection.style.display === 'none' ?  'block' : 'none';
-
+productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
+about.style.display = about.style.display === 'block'? 'none':'none';
+contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
+texture.style.display = texture.style.display === 'block'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 })
