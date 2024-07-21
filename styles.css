@@ -398,11 +398,12 @@ color: black;
 .iconwa, .iconfb {
     font-size: 2.5rem;
     text-decoration: none;
-    /*background-color: white;/*
+    /*background-color: white;*/
     border: none;
+overflow: hidden;
     padding: 0px;
 margin:none;
-    border-radius: 60%;
+    border-radius: 50%;
     transition: background-color 0.3s;
 }
 
@@ -415,7 +416,7 @@ margin:none;
 }
 
 .iconwa:hover, .iconfb:hover {
-    background-color: #ddd;
+    color: #fff;
 }
 
 /* Media Query for smaller screens */
@@ -435,9 +436,10 @@ margin:none;
         margin-left: 0;
         padding: 60px 20px;
     }
+
 .logo,.name,.slogan{
 position: relative;
-left: 78px;
+left: 48px;
 }
 
     .content.shifted {
