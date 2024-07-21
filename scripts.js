@@ -21,6 +21,15 @@ toggleLink.addEventListener('click',()=>{
 about.style.display = about.style.display === 'none'? 'block':'none';
 })
 
+//logic for interior paints
+const interior = document.getElementById("interior");
+const intDiv = document.querySelector('.interior');
+
+intDiv.addEventListener("click", () => {
+interior.style.display = interior.style.display === 'none'? 'block':'none';
+productSection.style.display = productSection.style.display === 'block' ? 'none':'block';
+})
+
 //Logic for toggling the vision, background and goals
 const headings = document.querySelectorAll('h3');
 
@@ -49,12 +58,14 @@ const productSection = document.querySelector('.featured-products')
 
 product.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
 })
  
 const ctaBtn = document.querySelector('.cta-button');
 
 ctaBtn.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
+interior.style.display = interior.style.display === 'block'? 'none':'none';
 })
 
 //logic to toggle the project section

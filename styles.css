@@ -235,7 +235,7 @@ footer {
 .featured-products {
     padding: 50px 20px;
     text-align: center;
-    background-color: rgb(123,0,77);
+    background-color: rgb(123,0,88);
     color: white;
     border: 6px solid yellow;
     /*display: none;*/
@@ -254,6 +254,18 @@ footer {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Ensure products wrap on small screens */
+}
+
+#interior{
+ padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(123,0,88);
+    color: white;
+    border: 6px solid yellow;
+    /*display: none;*/
+    margin-bottom: 50px;
+    border-radius: 13px;
+
 }
 
 .product-item {
