@@ -132,13 +132,15 @@ color: white;
     padding: 15px 20px;
     text-decoration: none;
     transition: background-color 0.3s;
-    margin-top: 35px;
+    margin-top: 20px;
     font-size: 1rem;
 }
 
 .sidebar nav a:hover {
     background-color: #575757;
 }
+
+
 
 /* Content Styles */
 .content {
@@ -454,6 +456,9 @@ left: 48px;
     .hero h1 {
         font-size: 2.5rem;
     }
+#home-toggle{
+margin-top:100px;
+}
 
     .about-us h2 {
         font-size: 2rem;
