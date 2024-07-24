@@ -200,6 +200,8 @@ color: white;
   background-color: rgb(123,0,88);
     color: white;
     border: 6px solid yellow;
+    border-left: none;
+    border-right: none;
     border-radius: 13px;
     margin-top: 20px;
     margin-bottom: 40px;
