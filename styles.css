@@ -358,7 +358,7 @@ color: black;
     border: 6px solid yellow;
     border-radius: 13px;
     position:relative;
-    bottom:10px;
+    bottom:100px;
 }
 
 .contact-form form {
@@ -404,6 +404,7 @@ color: black;
 
 #contactForm {
     display: none;
+    
 }
 
 /* Icon Styles */
