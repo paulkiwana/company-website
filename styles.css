@@ -164,6 +164,8 @@ color: white;
     align-items: center;
     justify-content: center;
     color: black;
+    position:relative;
+    top:100px;
     text-align: center;
     margin-bottom: 40px;
     background-color: #fff;
