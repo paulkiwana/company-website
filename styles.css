@@ -194,6 +194,7 @@ color: white;
 }
 
 #nav-image{
+    display:flex;
     border-radius:10px;
     gap:5px;
 }
