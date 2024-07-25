@@ -27,6 +27,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+    navImg.style.display = 'flex'; 
 !toggleSidebar()
 })
 
@@ -147,4 +148,16 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 !toggleSidebar()
+})
+//logic for navigation through the images 
+const interiorImg = document.getElemenyById('int');
+const navImg = document.getElementById('nav-image')
+interiorImg.addEventListener('click', ()=>{
+interior.style.display = interior.style.display === 'none'? 'block':'none';
+  navImg.style.display = 'none'; 
+})
+const exteriorImg = document.getElemenyById('ext');
+exteriorImg.addEventListener('click', ()=>{
+exterior.style.display = exterior.style.display === 'none'? 'block':'none';
+  navImg.style.display = 'none'; 
 })
