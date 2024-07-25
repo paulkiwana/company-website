@@ -153,11 +153,11 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 const interiorImg = document.getElemenyById('int');
 const navImg = document.getElementById('nav-image')
 interiorImg.addEventListener('click', ()=>{
-interior.style.display = interior.style.display === 'none'? 'block':'none';
+interior.style.display = 'block'
   navImg.style.display = 'none'; 
 })
 const exteriorImg = document.getElemenyById('ext');
 exteriorImg.addEventListener('click', ()=>{
-exterior.style.display = exterior.style.display === 'none'? 'block':'none';
+exterior.style.display = 'block'
   navImg.style.display = 'none'; 
 })
