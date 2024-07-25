@@ -193,6 +193,13 @@ color: white;
     color: purple;
 }
 
+#nav-image{
+    border-radius:10px;
+    gap:5px;
+}
+#nav-image img{
+    border-radius:10px;
+}
 /* About Us Section Styles */
 .about-us {
     padding: 40px 20px;
