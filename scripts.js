@@ -27,7 +27,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
-   // navImg.style.display = 'flex'; 
+    navImg.style.display = 'flex'; 
 !toggleSidebar()
 })
 
@@ -45,6 +45,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+    navImg.style.display = 'none';
 !toggleSidebar()
 })
 
@@ -100,6 +101,7 @@ productSection.style.display = productSection.style.display === 'block' ? 'none'
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+    navImg.style.display = 'none';
 !toggleSidebar()
 
 })
@@ -117,6 +119,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+    navImg.style.display = 'none';
 !toggleSidebar()
 })
  
@@ -130,6 +133,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
+    navImg.style.display = 'none';
 
 })
 
@@ -147,16 +151,17 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
+    navImg.style.display = 'none';
 !toggleSidebar()
 })
 //logic for navigation through the images 
-const interiorImg = document.getElemenyById('int');
+const interiorImg = document.getElementById('int');
 const navImg = document.getElementById('nav-image')
 interiorImg.addEventListener('click', ()=>{
 interior.style.display = 'block'
   navImg.style.display = 'none'; 
 })
-const exteriorImg = document.getElemenyById('ext');
+const exteriorImg = document.getElementById('ext');
 exteriorImg.addEventListener('click', ()=>{
 exterior.style.display = 'block'
   navImg.style.display = 'none'; 
