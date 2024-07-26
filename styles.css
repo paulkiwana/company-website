@@ -195,6 +195,7 @@ color: white;
 
 #nav-image{
     display:flex;
+    flex-wrap: wrap;
     border-radius:10px;
     gap:5px;
 }
