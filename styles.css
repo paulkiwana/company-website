@@ -343,12 +343,12 @@ color: black;
 }
 
 .project {
-    border: 1px solid #ddd;
+    border: none;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     text-align: left;
-    background-color: #333;
+    background-color: rgb(123,0,88);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
