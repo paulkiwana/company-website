@@ -301,7 +301,7 @@ font-style: italic;
 .product-item {
     border: none;
     padding: 20px;
-    /*border-radius: 10px;*/
+    border-radius: 10px;
     width: 30%;
     text-align: center;
     background-color: rgb(123,0,88);
