@@ -9,8 +9,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     event.preventDefault();
     var formMessage = document.getElementById('formMessage');
     formMessage.textContent = 'Thank you for contacting us! We will get back to you soon.';
-    formMessage.style.color = 'green';
-formMessage.style.backgroundColor = 'white'
+    formMessage.style.color = 'purple';
+formMessage.style.backgroundColor = 'yellow'
     this.reset();
 });
 
