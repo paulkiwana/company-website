@@ -292,6 +292,10 @@ width: 200px;
     border-radius: 13px;
 
 }
+.WG img{
+width:300px;
+    height:300px;
+}
 
 #interior h3,#exterior h3, #texture h3{
 color: yellow;
