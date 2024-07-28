@@ -156,6 +156,7 @@ color: white;
 
 /* Hero Section Styles */
 .hero {
+max-width: 1000px;
     height:27vh;
     display: flex;
     align-items: center;
@@ -166,6 +167,20 @@ color: white;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.mySlide{
+display:none;
+}
+
+.fade{
+animation-name:fade;
+animation-duration:1.5s;
+}
+
+@keyframes fade{
+from{opacity:.4}
+to{opacity:1}
 }
 
 .hero h1 {
