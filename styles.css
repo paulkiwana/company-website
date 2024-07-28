@@ -156,9 +156,6 @@ color: white;
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('');
-    background-size: cover;
-    background-position: top;
     height:27vh;
     display: flex;
     align-items: center;

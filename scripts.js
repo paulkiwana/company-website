@@ -167,3 +167,8 @@ exteriorImg.addEventListener('click', ()=>{
 exterior.style.display = 'flex'
   navImg.style.display = 'none'; 
 })
+const textureImg = document.getElementById('text');
+textureImg.addEventListener('click', ()=>{
+texture.style.display = 'flex';
+navImg.style.display = 'none';
+})
