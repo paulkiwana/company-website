@@ -207,18 +207,19 @@ to{opacity:1}
 }
 
 #nav-image{
-    display:flex;
-    flex-wrap: wrap;
-    border-radius:10px;
-    gap:20px;
-align-items: center;
-position:relative;
-left:0px;
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;    
 }
 #nav-image img{
-    border-radius:15px;
 width:370px;
 height:430px;
+    display:flex;
+    justify-content:center;
+align-items: center;
+position:relative;
+
 }
 /* About Us Section Styles */
 .about-us {
