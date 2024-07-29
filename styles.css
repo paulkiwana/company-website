@@ -309,12 +309,11 @@ width: 200px;
     color: white;
     border: 6px solid yellow;
     display: flex;
-gap:5px;
     margin-bottom: 50px;
     border-radius: 13px;
 width:100%;
 }
-.WG img, .UC img, .matt img, .prmr img{
+/*.WG img, .UC img, .matt img, .prmr img{
 width:370px;
     height:500px;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -324,7 +323,7 @@ transition: transform 0.5s ease;
 
 img:hover{
 transform: scale(1.1);
-}
+}*/
 #interior h3,#exterior h3, #texture h3{
 color: yellow;
 }
