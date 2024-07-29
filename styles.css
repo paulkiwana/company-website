@@ -167,6 +167,9 @@ width: 100%;
 
 .mySlide{
 display:none;
+    
+}
+.mySlide img{
     width: 90%;
     height: 470px;
 }
