@@ -518,6 +518,8 @@ height:400px;
 #nav-image{
 position:relative;
 left:30px;
+    flex-wrap: wrap;
+    gap:2px;
 }
 
 #nav-image img{
