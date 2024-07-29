@@ -170,8 +170,8 @@ display:none;
     
 }
 .mySlides img{
-    width: 90%;
-    height: 470px;
+    width: 100%;
+    height: 500px;
 }
 
 .fade{
