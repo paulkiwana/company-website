@@ -26,7 +26,7 @@ productSection.style.display = productSection.style.display === 'block' ? 'none'
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'flex'; 
     formMessage.textContent = '';
 !toggleSidebar()
@@ -45,7 +45,7 @@ productSection.style.display = productSection.style.display === 'block' ? 'none'
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
 !toggleSidebar()
 })
@@ -64,7 +64,7 @@ const exterior = document.getElementById("exterior");
 const extDiv = document.querySelector(".exterior");
 
 extDiv.addEventListener("click",()=>{
-exterior.style.display = exterior.style.display === 'none'? 'flex':'none';
+exterior.style.display = exterior.style.display === 'none'? 'block':'none';
 productSection.style.display = productSection.style.display === 'block' ? 'none':'block';
 })
 
@@ -101,7 +101,7 @@ about.style.display = about.style.display === 'block'? 'none':'none';
 productSection.style.display = productSection.style.display === 'block' ? 'none':'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
 !toggleSidebar()
 
@@ -116,7 +116,7 @@ product.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
@@ -130,7 +130,7 @@ ctaBtn.addEventListener('click', ()=>{
 productSection.style.display = productSection.style.display === 'none' ? 'block':'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 projectSection.style.display = projectSection.style.display === 'block' ?  'none' : 'none';
 about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
@@ -151,7 +151,7 @@ about.style.display = about.style.display === 'block'? 'none':'none';
 contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
-exterior.style.display = exterior.style.display === 'flex'? 'none':'none';
+exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
 !toggleSidebar()
 })
@@ -164,12 +164,12 @@ interior.style.display = 'block'
 })
 const exteriorImg = document.getElementById('ext');
 exteriorImg.addEventListener('click', ()=>{
-exterior.style.display = 'flex'
+exterior.style.display = 'block'
   navImg.style.display = 'none'; 
 })
 const textureImg = document.getElementById('text');
 textureImg.addEventListener('click', ()=>{
-texture.style.display = 'flex';
+texture.style.display = 'block';
 navImg.style.display = 'none';
 })
 
