@@ -165,11 +165,11 @@ width: 100%;
     border-radius: 10px;
 }
 
-.mySlide{
+.mySlides{
 display:none;
     
 }
-.mySlide img{
+.mySlides img{
     width: 90%;
     height: 470px;
 }
