@@ -27,7 +27,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
-    navImg.style.display = 'flex'; 
+    navImg.style.display = 'block'; 
     formMessage.textContent = '';
 !toggleSidebar()
 })
