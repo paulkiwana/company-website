@@ -5,7 +5,12 @@ function toggleSidebar() {
     content.classList.toggle('shifted');
 }
 
-document.getElementById('contactForm').addEventListener('submit', () =>{
+window.addEventListener('load', ()=>{
+navImg.style.display = 'block'; 
+})
+
+document.getElementById('contactForm').addEventListener('submit', () => {
+
     var formMessage = document.getElementById('formMessage');
     formMessage.textContent = 'Thank you for contacting us! We will get back to you soon.';
     formMessage.style.color = 'purple';
