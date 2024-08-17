@@ -7,6 +7,7 @@ body {
     background-color: #f4f4f9;
     color: #333; 
     width:100%;
+
 }
 
 a {
@@ -42,7 +43,7 @@ a {
 
 .logo,.name,.slogan{
 position: relative;
-left: 418px;
+left: 318px;
 }
 /* Footer Styles */
 footer {
@@ -150,6 +151,7 @@ color: white;
     padding: 80px 20px;
     transition: margin-left 0.3s;
     position: relative;
+  
 }
 
 .content.shifted {
@@ -165,6 +167,7 @@ width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    padding: 40px 20px;
 }
 
 .mySlides{
@@ -193,7 +196,7 @@ to{opacity:1}
 }
 
 .cta-button {
-    background-color: rgb(123,0,88);
+    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: yellow;
     padding: 10px 20px;
     text-decoration: none;
@@ -202,28 +205,41 @@ to{opacity:1}
     top:-100px;
     margin-top: 20px;
     display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.5s, color 0.5s;
+    transition: transform 0.5s ease;
 }
 
 .cta-button:hover {
-    background-color: yellow;
-    color: purple;
+    background:linear-gradient(to right, yellow 0%, rgb(212, 202, 8) 100%);
+    color: rgb(123,0,88);
+    transform: scale(1.15);
 }
-
+#welcome{
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
+    color:yellow;
+    border: 3.5px solid yellow;
+  /*  width:87%;*/
+    border-radius: 13px;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
 #nav-image{
-display: grid;
-    grid-template-columns: 1fr 1fr;
-  /*  grid-template-rows: repeat(2, 1fr);*/
-    gap: 3px;    
+display:grid;
+    position:relative;
+    grid-template-columns: 320px 320px; ; 
+  grid-template-rows: 320px 320px;
+ 
 }
-#nav-image img{
-width:400px;
-height:400px;
+#int, #ext{
+width:320px;
+height:320px;
     border-radius: 10px;
     justify-content:center;
 align-items: center;
 position:relative;
-
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #nav-image h3{
@@ -236,7 +252,11 @@ position:relative;
     border:2px yellow solid;
     border-radius:10px;
 }
-.heartbeat {
+#text{
+    width:640px;
+    height:320px;
+}
+/*.heartbeat {
   animation: heartbeat 14s infinite;
 }
 
@@ -256,7 +276,7 @@ position:relative;
   100% {
     transform: scale(1);
   }
-}
+}*/
 
 
 
@@ -264,15 +284,15 @@ position:relative;
 .about-us {
     padding: 40px 20px;
     text-align: center;
-  background-color: rgb(123,0,88);
+    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: white;
-    border: 6px solid yellow;
-    border-left: none;
-    border-right: none;
-    width:100%;
+    border: 3.5px solid yellow;
+  /*  width:87%;*/
     border-radius: 13px;
     margin-top: 20px;
     margin-bottom: 40px;
+    transition:transform ease-out 0.5s; /* Slide effect */
+   
 }
 
 .about-us h2 {
@@ -286,24 +306,20 @@ position:relative;
     font-size: 2rem;
 }
 
-.about-us h3:hover{
-background-color: yellow;
-color: rgb(123,0,88);
-width: 200px;
-}
+
 #about {
     display: none;
 }
 
 .about-content {
     text-align: left;
-    max-width: 800px;
+max-width: 800px;
     margin: 0 auto;
     padding: 15px;
 }
 
 #background-para, #vision-para, #goals-para {
-    display: none;
+    display: block;
     background-color: #333;
     padding: 40px;
     font-size: 1rem;
@@ -312,25 +328,33 @@ width: 200px;
     border-radius: 10px;
     color: #ddd;
     margin-bottom: 20px;
+    
+  
 }
 
 /* Featured Products Section Styles */
 .featured-products {
     padding: 50px 20px;
     text-align: center;
-    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(130,5,97) 100%);
-    
+   /* background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: white;
-    border: 6px solid yellow;
-    /*display: none;*/
+    border: 3.5px solid yellow;
+   display: none;*/
     margin-bottom: 50px;
     border-radius: 13px;
 }
 
 .featured-products h2 {
     font-size: 2.5rem;
-    color: yellow;
+  /*  color: yellow;*/
     margin-bottom: 30px;
+    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
+    color: yellow;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  
+    display: inline-block;
 }
 
 .product-list {
@@ -343,19 +367,27 @@ width: 200px;
 #interior, #exterior, #texture{
  padding: 50px 20px;
     text-align: center;
-    background-color: rgb(123,0,88);
+  /*  background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: white;
-    border: 6px solid yellow;
+    border: 3.5px solid yellow;*/
     display: flex;
     margin-bottom: 50px;
-    border-radius: 13px;
-width:100%;
+    /*border-radius: 13px;*/
+/*width:100%;*/
+align-items: center;
 flex-direction: column;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 #interior img,#exterior img,#texture img{
-    width:400px;
-    height:400px;
+    width:300px;
+    height:300px;
     align-content: left;
+    position:relative;
+    left:-0px;
+    top:50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
 }
 
 
@@ -367,28 +399,48 @@ border-radius: 20px;
 transition: transform 0.5s ease;
 }*/
 
-img:hover{
-transform: scale(1.1);
-}
-#interior h3,#exterior h3, #texture h3{
-color: yellow;
+#interior div, #exterior div, #texture div{
+display:flex;
+flex-direction: column;
+padding:2px;
+
 }
 #interior p, #exterior p, #texture p{
+width: 35%;
+position: relative;
+top:-270px;
+left:350px;
+/*background-color:#333;*/
+padding:15px;
 font-style: italic;
+border-radius:10px;
+background-color: rgb(123,0,88) ;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
 }
+#interior img:hover, #exterior img:hover, #texture img:hover{
+transform: scale(1.1);
+}
+/*#interior h3,#exterior h3, #texture h3{
+color: yellow;
+}*/
+
 .product-item {
     border: none;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     text-align: center;
-    background-color: rgb(123,0,88);
+   /* background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: background-color 0.3s, color 0.3s;
+transition: transform 0.5s ease;
 }
-.product-item:hover{
-background-color: #fff;
-color: black;
+.product-item:hover, .project:hover{
+/*background: #fff;
+color: black;*/
+transform: scale(1.1);
 }
 .product-item img {
     width: 100%;
@@ -399,13 +451,15 @@ color: black;
 .finished-projects {
     padding: 50px 20px;
     text-align: center;
-    background-color: rgb(123,0,88);
+    background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: white;
-    border: 6px solid yellow;
+    border: 3.5px solid yellow;
     display: none;
     margin-bottom: 50px;
     border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .finished-projects h2 {
     font-size: 2.5rem;
@@ -439,11 +493,11 @@ color: black;
 .contact-form {
     padding: 50px 20px;
     text-align: center;
-   background-color: rgb(123,0,88);
+  /*  background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: white;
-    border: 6px solid yellow;
+    border: 3.5px solid yellow;
     border-radius: 13px;
-    position:relative;
+    position:relative;*/
     
 }
 
@@ -454,9 +508,16 @@ color: black;
     width: 100%;
 }
 
-.contact-form h2 {
+/*.contact-form h2 {
+   color: yellow;*/
+  /*background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     color: yellow;
-}
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;*/
+   /* display: inline-block;
+}*/
 
 .contact-form label {
     display: block;
@@ -473,19 +534,24 @@ color: black;
     font-size: 1rem;
 }
 
-.contact-form button {
-    background-color: yellow;
-    color: purple;
+.contact-form button, #back-to-featured,#back-to-featured2,#back-to-featured3 {
+    background-color: rgb(123,0,88) ;
+    color: yellow;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.5s ease;
 }
 
-.contact-form button:hover {
-    background-color: purple;
-    color: yellow;
+.contact-form button:hover,#back-to-featured:hover, #back-to-featured2:hover, #back-to-featured3:hover  {
+    background-color: yellow;
+    color: rgb(123,0,88);
+    transform: scale(1.1) ;
+    filter: drop-shadow(2px 2px yellow);
+   
+  
 }
 
 #contactForm {
@@ -520,7 +586,7 @@ margin:none;
 
 
 /* Media Query for smaller screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 800px){
     .sidebar {
         top: 0;
         height: 100%;
@@ -536,10 +602,26 @@ margin:none;
         margin-left: 0;
         padding: 60px 20px;
     }
+    .hero {
+width: 125%;
+padding: none;
+height: 30vh;
+}
+
+ .mySlides img{
+    width: 96.98%;
+    position:relative;
+    left: -10px;
+    margin: none;
+    height:35.77vh;
+}
+.mySlides {
+    width:112.8%;
+}
 
 .logo,.name,.slogan{
 position: relative;
-left: 48px;
+left: 98px;
 }
 
     .content.shifted {
@@ -553,29 +635,54 @@ left: 48px;
 margin-top:100px;
 }
 
-#exterior{
-flex-wrap: wrap;
+#interior div, #exterior div, #texture div{
+    display:flex;
+flex-direction: column;
+
 }
-#interior img,#exterior img,#texture img{
-    width:210px;
-    height:210px;
+#interior, #exterior, #texture{
+
+    width:125%;
+}
+#interior p, #exterior p, #texture p{
+position:relative;
+left:80px;
+top:-40px;
+width:58%;
+min-height:107px;
+font-size:12px;
+border-radius:10px;
+text-align: center;
+transform: translateX(70px);
 }
 
+#interior img,#exterior img,#texture img{
+    min-width:170px;
+    min-height:170px;
+    position:relative;
+    top:0px;
+    left:-20px;
+
+}
+#interior img:hover, #exterior img:hover, #texture img:hover{
+    z-index:999;
+
+}
 
 #nav-image{
-position:relative;
-left:30px;
-    flex-wrap: wrap;
-    gap:2px;
+    display:block;
 }
-
-#nav-image img{
-width:210px;
-height:210px;
-}
+/*#nav-image img{
+width:170px;
+height:170px;
+}*/
 #nav-image h3{
     top:-150px;
-    width:180px;
+    width:160px;
+}
+#int, #ext, #text{
+    width:170px;
+height:170px;
 }
     .about-us h2 {
         font-size: 2rem;
@@ -584,8 +691,9 @@ height:210px;
     .featured-products h2, .finished-projects h2 {
         font-size: 2rem;
     }
-
-    .product-item, .project {
-        width: 100%;
+    .featured-products, .finished-projects,  .product-item, .project,
+    .contact-form, .about-us{
+        width:125%;
     }
+   
 }
