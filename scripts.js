@@ -37,10 +37,10 @@ navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
 !toggleSidebar()
 
 })
-//logic to listen for the resize event so that we don't get the wrong display in the wrong view port width
+/*/logic to listen for the resize event so that we don't get the wrong display in the wrong view port width
 window.addEventListener('resize', ()=>{
     navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
-    });
+    });*/
 
 
 // logic for about-us toggle
