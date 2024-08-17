@@ -31,11 +31,7 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
-if (window.innerWidth >= 800) {
-    navImg.style.display = 'grid';
-} else {
-    navImg.style.display = 'block';
-}
+navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
     formMessage.textContent = '';
     welcome.style.display = "block";
 !toggleSidebar()
