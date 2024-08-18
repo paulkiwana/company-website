@@ -40,8 +40,11 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 //logic to listen for the resize event so that we don't get the wrong display in the wrong view port width
 window.addEventListener('resize', ()=>{
       navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
-    
-});
+    if(about.style.display === 'block'|| contactForm.style.display === 'block'|| productSection.style.display === 'block'||projectSection.style.display === 'block'|| interior.style.display === 'block'||exterior.style.display === 'block'||texture.style.display=== 'block' ){
+        navImg.style.display = 'none';
+
+        }  
+    });
 
 
 // logic for about-us toggle
