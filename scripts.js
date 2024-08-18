@@ -38,7 +38,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
 
 })
 //logic to listen for the resize event so that we don't get the wrong display in the wrong view port width
-window.addEventListener('resize', ()={
+window.addEventListener('resize', ()=>{
       navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
     
 });
