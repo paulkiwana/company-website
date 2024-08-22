@@ -242,7 +242,7 @@ animation: slideIn 0.5s ease-in-out;
 #int, #ext{
 width:320px;
 height:320px;
-    border-radius: 10px;
+   /* border-radius: 10px;*/
     justify-content:center;
 align-items: center;
 position:relative;
@@ -261,9 +261,9 @@ transition: transform 0.5s ease;
     border-radius:10px;
 }
 #text{
-    width:640px;
-    height:320px;
-    border-radius: 10px;
+    width:660px;
+    height:340px;
+   /* border-radius: 10px;*/
     transition: transform 0.5s ease;
 }
 @keyframes slideIn {
@@ -627,7 +627,7 @@ margin:none;
 @media(max-width: 800px) and (orientation: portrait) {
    /*body{
        zoom: 0.75;
-   }*/
+   }
    .header{
      height:13vh;
    }
