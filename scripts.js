@@ -29,6 +29,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
+    navImg.style.display = window.innerWidth <= 400 ? 'block' : 'grid';
     formMessage.textContent = '';
     navImg.classList.add('animate')
 }
@@ -44,6 +45,7 @@ headerHome.addEventListener('click', func2)// header home tag
 //resize window listener
 window.addEventListener('resize', ()=>{
 navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
+navImg.style.display = window.innerWidth <= 400 ? 'block' : 'grid';
 const sections = document.querySelectorAll('.section')
 sections.forEach(section=>{
 

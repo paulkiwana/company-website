@@ -234,8 +234,8 @@ display:grid;
     position:relative;
     grid-template-columns: 320px 320px; ; 
   grid-template-rows: 320px 320px;
- grid-column-gap: 3.5px;
- grid-row-gap: 3.5px;
+ grid-column-gap: 20px;
+ grid-row-gap: 20px;
 animation: slideIn 0.5s ease-in-out;
 
 }
@@ -624,15 +624,19 @@ margin:none;
 
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 800px)  {
+@media(max-width: 800px) and (orientation: portrait) {
    /*body{
        zoom: 0.75;
    }*/
-   .header-nav{
+   .header{
+     height:13vh;
+   }
+    /*.header-nav{
        display:flex;
        position:relative;
-       left:150%;
-   }
+       left:10%;
+       top:17px;
+   }*/
     .sidebar {
         top: 0;
         height: 100%;
@@ -751,4 +755,15 @@ height:320px;
     animation: slideIn 1.22s ease-in-out;
 }
 
+}
+@media(max-width: 400px) and (orientation: landscape) {
+  #nav-image{
+    display: grid;
+  }
+  .header-nav{
+       display:flex;
+       position:relative;
+       left:17%;
+       top:7px;
+   }
 }
