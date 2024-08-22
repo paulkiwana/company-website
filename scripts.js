@@ -263,7 +263,7 @@ backBtn3.addEventListener("click", ()=>{
     texture.style.display = 'none';
 });
 
-/*document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
 
@@ -271,5 +271,5 @@ backBtn3.addEventListener("click", ()=>{
       behavior: 'smooth'
     });
   });
-});*/
+});
  
