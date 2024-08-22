@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose River Coating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Jose River Coatings</title>
    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,6 +20,14 @@
 
             <h1 class="name">Jose River Coating Inv Ltd</h1>
             <p class="slogan">Reliable Coatings</p>
+              <nav class="header-nav">
+                <a href="#home" id="header-home">Home</a>
+            <a id="header-about" href="#about">About Us</a>
+            <a href="#products" id="header-product">Products</a>
+            <a id="header-project" href="#projects">Projects</a>
+            <a id= "header-contact" href="#contact">Contact</a>
+            </nav>
+        
         </div>
     </div>
 
@@ -49,13 +58,9 @@
 </div>
 
 <div class="mySlides fade">
-<img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Untitled1_20240728233835.jpg" >
+<img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/JoseRiverCoating.jpg" >
 </div>
 <a href="#products" class="cta-button">Explore Our Products</a>
-
-    </section>
-    <section id="welcome">
-        <h1>Welcome!</h1>
     </section>
 
  <section id ='nav-image'>
@@ -72,7 +77,7 @@
 </div>
  </section>
 
-    <section id="about" class="about-us" style="display:none">
+    <section id="about" class="about-us section" style="display:none">
        
  <h2>Who We Are</h2>
         <div class="about-content">
@@ -98,7 +103,7 @@
 
     </section>
 
-    <section id="products" class="featured-products" style="display:none">
+    <section id="products" class="featured-products section" style="display:none">
         <h2>Featured Products</h2>
         <div class="product-list">
             <div class="product-item interior">
@@ -123,7 +128,7 @@
         </div>
     </section>
     
-<div id="interior" style="display:none">
+<div id="interior" style="display:none" class="section">
 <div>
 <h3>Undercoat</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Undercoat.jpg">
@@ -153,10 +158,10 @@ and even previously painted walls. It can also be applied brush, rollers, and sp
 <button id="back-to-featured" style="display:none">Back</button>
 </div>
 
-<div id="exterior" style="display:none">
+<div id="exterior" style="display:none" class="section">
 <div class="prmr">
 <h3>Primer</h3>
-<img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Primer.jpg">
+<img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/primer.jpg">
 <p>Primer paint is special coating used on surfaces before painting. It is designed improve adhesion of paint to the surface, Increase paints durability, offer additional protection for the material being painted, 
 acts as a sealer for porous surfaces and act as a stain blocker for walls</p>
 </div>
@@ -185,7 +190,7 @@ and even previously painted walls. It can also be applied brush, rollers, and sp
 <button id="back-to-featured2" style="display:none">Back</button>
 </div>
 
-<div id="texture" style="display:none">
+<div id="texture" style="display:none" class="section">
 <div>
 <h3>Texture Emprofile(Paste)</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Emprofile_paste.jpg">
@@ -224,34 +229,34 @@ durable producing an everlasting stone look</p>
 <button id="back-to-featured3" style="display:none">Back</button>
 </div>
 
-<section id='projects' style="display:none" class="finished-projects">
+<section id='projects' style="display:none" class="finished-projects section">
 
 <h2>Finished Projects</h2>
         <div class="project-list">
-            <div class="project">
-                <img src="">
+            <div class="project one">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Ideal_classic_hostel.jpg">
     <h3>Ideal Hostels</h3>
               <p>One of the most sought out living spaces for university students in Nakawa Kampala.We are Ideal Hostel's trusted supplier and consultant for paint solutions and have worked on several Ideal Hostel's such  as Ideal Platinum and Ideal Annex and the newly finished 2024 Ideal hostel</p>
             </div>
-            <div class="project">
-                <img src="">
+            <div class="project two">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/residentials.jpg">
     <h3>Residences</h3>
                 <p>Description of project 2.</p>
             </div>
-            <div class="project">
-                <img src="" >
+            <div class="project three">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Denver_elysium_apartments.jpg">
                  <h3>Denver Elysium Apartments</h3>
                 <p>Description of project 3.</p>
             </div>
-            <div class="project">
-                <img src="" >
+            <div class="project four">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/The_Hickory.jpg">
                 <h3>The Hickory</h3>
                 <p>Description of project 3.</p>
             </div>
         </div>
 </section>
 
-    <section id="contact" class="contact-form">
+    <section id="contact" class="contact-form section">
         <h2>Contact Us</h2>
     
 <a href="https://maps.app.goo.gl/3bvmvearMjgejmYZ6" class="location" target="_blank"><i class="fa-solid fa-location-dot"></i></a><h3>ADDRESS</h3><p>Mbalwa,Namugongo, P.O BOX 113337, Kampala, Uganda</p>
@@ -289,6 +294,7 @@ durable producing an everlasting stone look</p>
 </footer>
 
     <script src="scripts.js">
+
 </script>
 </body>
 </html>
