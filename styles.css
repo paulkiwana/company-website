@@ -604,7 +604,7 @@ margin:none;
 
 
 /* Media Query for smaller screens */
-@media(max-width: 800px) and (orientation: portrait) {
+@media(max-width: 768px) and (orientation: portrait)  {
    /*body{
        zoom: 0.75;
    }
@@ -737,11 +737,11 @@ height:320px;
 }
 
 }
-@media screen and (min-width: 600px) and (orientation: landscape) {
+/*@media screen and (orientation: landscape) {
   #nav-image{
     display: grid;
   }
-  .header-nav{
+  /*.header-nav{
        display:flex;
        position:relative;
        left:137%;
@@ -751,4 +751,4 @@ height:320px;
    #text{
      width:320px;
    }
-}
+}*/
