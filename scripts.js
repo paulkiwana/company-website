@@ -28,8 +28,9 @@ contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'non
 interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
-    navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
- //  navImg.style.display = window.innerHeight < 400 ? 'block' : 'grid';
+    navImg.style.display = window.innerWidth >= 768 ? 'grid' : 'block';
+   text.style.width = window.innerWidth >= 650  ? '655px' : '320px';//this code is absolute guess work
+   navImg.style.display = window.innerWidth >= 650 ? 'grid' : 'block';//this code is absolute guess work
     formMessage.textContent = '';
     navImg.classList.add('animate')
 }
@@ -44,8 +45,9 @@ headerHome.addEventListener('click', func2)// header home tag
 
 //resize window listener
 window.addEventListener('resize', ()=>{
-navImg.style.display = window.innerWidth >= 800 ? 'grid' : 'block';
-//navImg.style.display = window.innerHeight < 400 ? 'block' : 'grid';
+navImg.style.display = window.innerWidth >= 768 ? 'grid' : 'block';
+ text.style.width = window.innerWidth >= 650  ? '655px' : '320px';//this code is absolute guess work
+ navImg.style.display = window.innerWidth >= 650 ? 'grid' : 'block';//this code is absolute guess work
 const sections = document.querySelectorAll('.section')
 sections.forEach(section=>{
 
