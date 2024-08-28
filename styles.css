@@ -74,7 +74,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/* Logo Styles */
+/*Logo Styles */
 .logo {
     width: 60px;
     height: 60px;
@@ -103,6 +103,11 @@ footer {
     font-family: 'Arial', sans-serif;
     color: white;
     font-weight: bold;
+}
+.logo img{
+  width:80px;
+  border:none;
+  background-color:#333;
 }
 
 /* Sidebar Styles */
@@ -271,35 +276,8 @@ transition: transform 0.5s ease;
   to { transform: translateX(0); }
 }
 
-
-
-
-/*.heartbeat {
-  animation: heartbeat 14s infinite;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.05);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}*/
-
-
-
 /* About Us Section Styles */
-.about-us {
+.about-us, #welcome {
     padding: 40px 20px;
     text-align: center;
   /*  background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
@@ -339,7 +317,7 @@ max-width: 800px;
     padding: 15px;
 }
 
-#background-para, #vision-para, #goals-para {
+#background-para, #vision-para, #goals-para, #welcome p {
     display: block;
    /* background-color: #333;*/
     padding: 40px;
@@ -517,7 +495,9 @@ transform: scale(1.1);
     background-color: #f4f4f9;
     color: #333;
 }
-
+.project p{
+  font-size:18px;
+}
 .one{
     animation: slideIn 1.82s ease-in-out;
 } 
