@@ -26,7 +26,6 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-
     background-color: #333;
     color: #fff;
     display: flex;
@@ -48,15 +47,16 @@ a {
 }
 .header-nav {
     position:relative;
-    left:218%;
+    left:118%;
     top:-40px;
     display: flex;
-    gap: 15px;
+    gap: 30px;
+    
 }
 
 .logo,.name,.slogan{
 position: relative;
-left: 318px;
+left: 28px;
 }
 /* Footer Styles */
 footer {
@@ -74,7 +74,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/*Logo Styles */
+/*Logo Styles 
 .logo {
     width: 60px;
     height: 60px;
@@ -103,11 +103,15 @@ footer {
     font-family: 'Arial', sans-serif;
     color: white;
     font-weight: bold;
-}
+}*/
 .logo img{
-  width:80px;
+  width:110px;
+  height:96px;
   border:none;
   background-color:#333;
+  position: relative;
+  left:3px;
+  top:-3px;
 }
 
 /* Sidebar Styles */
@@ -128,7 +132,7 @@ footer {
 }
 
 .toggle-btn {
-    display: block;
+    display: none;
     color: yellow;
     background-color: #333;
     font-size: 2.25rem;
@@ -276,6 +280,19 @@ transition: transform 0.5s ease;
   to { transform: translateX(0); }
 }
 
+.bucket{
+  position:relative;
+  top:-1400px;
+  left:500px;
+  
+  
+}
+.bucket img{
+  position:fixed;
+  width:1000px;
+  height:1500px;
+  
+}
 /* About Us Section Styles */
 .about-us, #welcome {
     padding: 40px 20px;
@@ -363,8 +380,8 @@ color: #333;
 
 }
 #interior img,#exterior img,#texture img{
-    width:300px;
-    height:300px;
+    width:320px;
+    height:400px;
     align-content: left;
     position:relative;
     left:-0px;
@@ -497,6 +514,7 @@ transform: scale(1.1);
 }
 .project p{
   font-size:18px;
+  
 }
 .one{
     animation: slideIn 1.82s ease-in-out;
@@ -607,16 +625,18 @@ margin:none;
 @media(max-width: 768px) and (orientation: portrait)  {
    /*body{
        zoom: 0.75;
-   }
+   }*/
    .header{
+     top:-20px;
      height:13vh;
    }
-    .header-nav{
-       display:flex;
-       position:relative;
+   
+   .header-nav{
+       display:none;
+     /*  position:relative;
        left:10%;
-       top:7px;
-   }*/
+       top:7px;*/
+   }
     .sidebar {
         top: 0;
         height: 100%;
@@ -624,8 +644,9 @@ margin:none;
     }
 
     .toggle-btn {
-        top: 15px;
+        top: 5px;
         left: 15px;
+        display:block;
     }
 
     .content {
@@ -636,6 +657,7 @@ margin:none;
 width: 125%;
 padding: none;
 height: 30vh;
+
 }
 
  .mySlides img{
@@ -651,9 +673,17 @@ height: 30vh;
 
 .logo,.name,.slogan{
 position: relative;
-left: 98px;
+left: 108px;
+top:-2px;
+padding:2px;
 }
-
+.logo img{
+  width:120px;
+  height:100px;
+  position: relative;
+  top:6px;
+  left:7px;
+}
     .content.shifted {
         margin-left: 0;
     }
