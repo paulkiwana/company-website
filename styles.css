@@ -8,7 +8,7 @@ body {
     width:85%;
   /*  font-family: cursive;*/
   zoom:0.7;
- 
+  
 }
 html{
     margin:auto;
@@ -47,7 +47,7 @@ a {
 }
 .header-nav {
     position:relative;
-    left:118%;
+    left:108%;
     top:-40px;
     display: flex;
     gap: 30px;
@@ -122,7 +122,7 @@ footer {
     width: 250px;
     height: 100%;
     background-color: #333;
-    overflow: hidden;
+ /*   overflow: hidden;*/
     transition: left 0.3s; /* Slide effect */
     z-index: 999;
 }
@@ -280,18 +280,18 @@ transition: transform 0.5s ease;
   to { transform: translateX(0); }
 }
 
-.bucket{
-  position:relative;
-  top:-1400px;
-  left:500px;
-  
-  
-}
+
 .bucket img{
-  position:fixed;
-  width:1000px;
-  height:1500px;
-  
+ 
+  width:1500px;
+  height:2000px;
+  z-index: 1001;
+/*  background-color: purple;*/
+   position: relative;
+  top:-1500px;
+  left:1000px;
+  padding:none;
+  margin:none;
 }
 /* About Us Section Styles */
 .about-us, #welcome {
@@ -437,7 +437,7 @@ from {
 }
 
 
-.product-item {
+.product-item{
     border: none;
     padding: 20px;
     border-radius: 10px;
@@ -465,13 +465,13 @@ background-color: #f4f4f9 ;
 color: rgb(123,0,88);*/
 transform: scale(1.1);
 }
-.product-item img {
+.product-item img,.finished img {
     width: 100%;
     border-radius: 5px;
 }
 
 /* Finished Projects Section Styles */
-.finished-projects,.featured-products {
+.finished-projects,.featured-products,#gallery {
     padding: 50px 20px;
     text-align: center;
    /* background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
@@ -500,7 +500,7 @@ transform: scale(1.1);
     flex-wrap: wrap; /* Ensure projects wrap on small screens */
 }
 
-.project {
+.project,.finished {
     border: none;
     padding: 20px;
     border-radius: 10px;
@@ -633,9 +633,9 @@ margin:none;
    
    .header-nav{
        display:none;
-     /*  position:relative;
-       left:10%;
-       top:7px;*/
+      position:relative;
+      /* left:0%;
+       /top:7px;*/
    }
     .sidebar {
         top: 0;
@@ -679,7 +679,7 @@ padding:2px;
 }
 .logo img{
   width:120px;
-  height:100px;
+  height:103px;
   position: relative;
   top:6px;
   left:7px;
@@ -752,7 +752,7 @@ height:320px;
         font-size: 2rem;
     }
     .featured-products, .finished-projects,  .product-item, .project,
-    .contact-form, .about-us{
+    .contact-form, .about-us,#gallery{
         width:125%;
     }
    

@@ -33,6 +33,7 @@ exterior.style.display = exterior.style.display === 'block'? 'none':'none';
    navImg.style.display = window.innerWidth >= 650 ? 'grid' : 'block';//this code is absolute guess work
     formMessage.textContent = '';
     navImg.classList.add('animate')
+    gallery.style.display = 'none'
 }
 //when the sidebar home nav is clicked
 homeToggle.addEventListener('click', ()=>{
@@ -83,6 +84,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
+    gallery.style.display = 'none'
    } 
    // when the sidebar about button is clicked :) 
 toggleLink.addEventListener('click',()=>{
@@ -144,6 +146,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
+    gallery.style.display = 'none'
 }
 //sidebar nav
 contact.addEventListener('click', ()=>{
@@ -169,6 +172,7 @@ const func3 = () => {
     contactForm.style.display = contactForm.style.display === 'block'? 'none' : 'none';
         navImg.style.display = 'none';
         productSection.classList.add('animate');
+        gallery.style.display = 'none';
         }
         //sidebar product nav tag
 product.addEventListener('click', ()=>{
@@ -197,6 +201,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
+    gallery.style.display = 'none'
 }
 // side bar project nav tag
 project.addEventListener('click', ()=>{
@@ -277,3 +282,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
  
+const galleryLink = document.getElementById('gallery-link');
+const gallery = document.getElementById('gallery');
+
+galleryLink.addEventListener('click', ()=>{
+  gallery.style.display = 'block'
+ projectSection.style.display = "none"
+})
