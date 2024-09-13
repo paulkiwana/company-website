@@ -33,6 +33,8 @@ a {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    flex-shrink:1;
+    flex-grow:0.5;
 }
 
 .header .company-info h1 {
@@ -355,8 +357,10 @@ filter: grayscale(13%);
 .product-list ,.gallery-items{
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 20px;
     flex-wrap: wrap; /* Ensure products wrap on small screens */
+    flex-shrink:1;
+    flex-grow:0.5;
 }
 
 #interior, #exterior, #texture{
@@ -498,6 +502,8 @@ transform: scale(1.1);
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Ensure projects wrap on small screens */
+    flex-shrink:1;
+    flex-grow:1;
 }
 
 .project, finished {
