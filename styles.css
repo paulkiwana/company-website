@@ -355,7 +355,7 @@ filter: grayscale(13%);
 .product-list ,.gallery-items{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     flex-wrap: wrap; /* Ensure products wrap on small screens */
 }
 
