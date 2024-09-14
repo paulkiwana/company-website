@@ -354,13 +354,12 @@ filter: grayscale(13%);
 }
 
 
-.product-list ,.gallery-items{
+.product-list, .gallery-items, .project-list{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Ensure products wrap on small screens */
-    flex-shrink:1;
-    flex-grow:0.5;
+    
 }
 
 #interior, #exterior, #texture{
@@ -441,19 +440,19 @@ from {
 }
 
 
-.product-item{
+/*.product-item{
     border: none;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     text-align: center;
-   /* background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);*/
+   /* background: linear-gradient(to right, rgb(123,0,88) 0%, rgb(140,0,90) 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 transition: background-color 0.3s, color 0.3s;
 transition: transform 0.5s ease;
 background-color: #f4f4f9 ;
     color: #333;
-}
+}*/
 
 .interior  {
     animation: slideIn 1.42s ease-in-out;
@@ -469,7 +468,7 @@ background-color: #f4f4f9 ;
 color: rgb(123,0,88);*/
 transform: scale(1.1);
 }
-.product-item img,.finished img {
+.product-item img, .finished img, .project img{
     width: 100%;
     border-radius: 5px;
 }
@@ -497,16 +496,15 @@ transform: scale(1.1);
     margin-bottom: 30px;
 }
 
-.project-list {
+/*.project-list {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure projects wrap on small screens */
-    flex-shrink:1;
-    flex-grow:1;
-}
+    flex-wrap: wrap; /* Ensure projects wrap on small screens 
+   
+}*/
 
-.project, finished {
+.project, .finished ,.product-item{
     border: none;
     padding: 20px;
     border-radius: 10px;
@@ -518,7 +516,7 @@ transform: scale(1.1);
     background-color: #f4f4f9;
     color: #333;
 }
-.project p{
+.project p, product-item p{
   font-size:18px;
   
 }
@@ -534,10 +532,10 @@ transform: scale(1.1);
 .four, #goals-para, #text{
     animation: slideIn 1.22s ease-in-out;
 }
-.project img {
+/*.project img {
     width: 100%;
     border-radius: 5px;
-}
+}*/
 
 /* Contact Form Styles */
 .contact-form {
