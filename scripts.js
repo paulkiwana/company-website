@@ -61,6 +61,11 @@ navImg.style.display = 'none';
     if(gallery.style.display==='block'){
       navImg.style.display = 'none';
     }
+    if(sidebar.classList.toggle('visible')&content.classList.toggle('shifted')){
+      !sidebar.classList.toggle('visible');
+      !content.classList.toggle('shifted');
+    }
+ 
  //my own algorithm :D :) refactored no idea why I was so afraid of using forEach
 })
 
