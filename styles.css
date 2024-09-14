@@ -755,7 +755,7 @@ height:320px;
     .featured-products h2, .finished-projects h2 {
         font-size: 2rem;
     }
-    .featured-products, .finished-projects,  .product-item, .project,
+    .featured-products, .finished-projects,  .product-item, .project, .finished,
     .contact-form, .about-us,#gallery{
         width:125%;
     }
