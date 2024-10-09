@@ -6,6 +6,7 @@ function toggleSidebar() {
 }
 
 //submit contact form code
+const sendBtn = document.getElementById("send")
 document.getElementById('contactForm').addEventListener('submit', () => {
 
     var formMessage = document.getElementById('formMessage');
@@ -14,6 +15,7 @@ document.getElementById('contactForm').addEventListener('submit', () => {
 formMessage.style.backgroundColor = 'yellow'
     this.reset();
 });
+
 
 //home toggle logic
 const homeToggle = document.getElementById('home-toggle');
@@ -29,7 +31,7 @@ interior.style.display = interior.style.display === 'block'? 'none':'none';
 texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = window.innerWidth >= 768 ? 'grid' : 'block';
-   text.style.width = window.innerWidth >= 650  ? '655px' : '320px';//this code is absolute guess work
+   text.style.width = window.innerWidth >= 650  ? '655px' : '380px';//this code is absolute guess work
    navImg.style.display = window.innerWidth >= 650 ? 'grid' : 'block';//this code is absolute guess work
     formMessage.textContent = '';
     navImg.classList.add('animate')
@@ -47,7 +49,7 @@ headerHome.addEventListener('click', func2)// header home tag
 //resize window listener
 window.addEventListener('resize', ()=>{
 navImg.style.display = window.innerWidth >= 768 ? 'grid' : 'block';
- text.style.width = window.innerWidth >= 650  ? '655px' : '320px';//this code is absolute guess work
+ text.style.width = window.innerWidth >= 650  ? '655px' : '380px';//this code is absolute guess work
  navImg.style.display = window.innerWidth >= 650 ? 'grid' : 'block';//this code is absolute guess work
 const sections = document.querySelectorAll('.section')
 sections.forEach(section=>{
@@ -144,6 +146,8 @@ texture.classList.add('animate')
 //logic to toggle contact form
 const contact = document.getElementById('contact-toggle')
 const contactForm = document.getElementById('contactForm')
+
+
 // contact form global variable
 const func5 = ()=> {
     contactForm.style.display = 'block';
@@ -155,6 +159,7 @@ texture.style.display = texture.style.display === 'block'? 'none':'none';
 exterior.style.display = exterior.style.display === 'block'? 'none':'none';
     navImg.style.display = 'none';
     gallery.style.display = 'none'
+    
 }
 //sidebar nav
 contact.addEventListener('click', ()=>{
@@ -296,4 +301,331 @@ const gallery = document.getElementById('gallery');
 galleryLink.addEventListener('click', ()=>{
   gallery.style.display = 'block'
  projectSection.style.display = "none"
+});
+
+const project2 = document.getElementById('project2')
+
+project2.addEventListener('click',()=>{
+  gallery.style.display = 'block'
+ projectSection.style.display = "none"
 })
+const galleryBckBtn = document.getElementById("galleryBtn")
+
+galleryBckBtn.addEventListener("click",()=>{
+  gallery.style.display = 'none'
+ projectSection.style.display = "block"
+})
+
+const paintPrices = {
+      silk: 15000,
+      weatherguard: 20000,
+      emprofile: 20000,
+      matt: 10000,
+      undercoat: 2500,
+      stucco: 25000,
+      primer: 3000
+    };
+
+    //const paintTypesContainer = document.getElementById('paint-types');
+    const paintTypesContainer = document.getElementById('paint-type-${paintTypeIndex}')
+    
+    const resultDiv = document.getElementById('result');
+const calculator = document.querySelector('.calculator')
+
+
+//colorInputFunction()
+    
+let paintTypeIndex = 0;
+let firstPaintTypeAdded = false
+// Function to add new paint type
+
+
+function addPaintType() {
+    if (firstPaintTypeAdded) {
+        const previousPaintTypeFields = document.getElementById(`paint-type-${paintTypeIndex}`);
+        
+        // Check if previous fields are filled
+        if (
+            previousPaintTypeFields.querySelector(`#paintType-${paintTypeIndex}`).value !== '' &&
+            previousPaintTypeFields.querySelector(`#squareMeters-${paintTypeIndex}`).value !== '' &&
+            previousPaintTypeFields.querySelector(`#color-${paintTypeIndex}`).value !== '' &&
+            previousPaintTypeFields.querySelector(`#coats-${paintTypeIndex}`).value !== ''
+        ) {
+            paintTypeIndex++;
+            const paintTypeHTML = `
+                <div id="paint-type-${paintTypeIndex}">
+                    <div class="paint-type">
+                        <label>Paint Type:</label>
+                        <select id="paintType-${paintTypeIndex}" name="paintType">
+                            <option value="silk">Silk</option>
+                            <option value="weatherguard">Weatherguard</option>
+                            <option value="emprofile">Emprofile</option>
+                            <option value="matt">Matt</option>
+                            <option value="undercoat">Undercoat</option>
+                            <option value="stucco">Stucco</option>
+                             <option value="primer">Primer</option>
+                        </select>
+                        <label>Square Meters:</label>
+                        <input type="number" id="squareMeters-${paintTypeIndex}" name="squareMeters">
+                        <label>Color:</label>
+                        <input type="text" id="color-${paintTypeIndex}" name="color" href="#colorChart" placeholder="select from color chart" class="colorInput">
+                        <label>Number of Coats:</label>
+                        <input type="number" id="coats-${paintTypeIndex}" name="coats">
+                    </div>
+                </div>
+            `;
+            
+        
+            paintTypesContainer.insertAdjacentHTML('beforeend', paintTypeHTML);
+            storePaintTypeValues(); // Store values on add
+        } else {
+            alert('Please fill in the previous fields before adding a new paint type.');
+        }
+    } else {
+        firstPaintTypeAdded = true;
+        paintTypeIndex++;
+        const paintTypeHTML = `
+            <div id="paint-type-${paintTypeIndex}">
+                <div class="paint-type">
+                    <label>Paint Type:</label>
+                    <select id="paintType-${paintTypeIndex}" name="paintType">
+                        <option value="silk">Silk</option>
+                        <option value="weatherguard">Weatherguard</option>
+                        <option value="emprofile">Emprofile</option>
+                        <option value="matt">Matt</option>
+                        <option value="undercoat">Undercoat</option>
+                        <option value="stucco">Stucco</option>
+                        <option value="primer">Primer</option>
+                    </select>
+                    <label>Square Meters:</label>
+                    <input type="number" id="squareMeters-${paintTypeIndex}" name="squareMeters">
+                    <label>Color:</label>
+                    <input type="text" id="color-${paintTypeIndex}" name="color" href="#colorChart" placeholder="select from color chart?" class="colorInput">
+                    <label>Number of Coats:</label>
+                    <input type="number" id="coats-${paintTypeIndex}" name="coats">
+                </div>
+            </div>
+        `;
+        
+    
+        paintTypesContainer.insertAdjacentHTML('beforeend', paintTypeHTML);
+        storePaintTypeValues(); // Store values on add
+    }
+}
+
+// Add event listener to "Add Paint Type" button
+const addPaintTypeButton = document.getElementById('add-paint-type')
+addPaintTypeButton.addEventListener('click', ()=>{
+  firstChildPaintValue = document.getElementById("paintType-${paintTypeIndex}").value
+  firstChildSquareMetersValue = document.getElementById("squareMeters-${paintTypeIndex}").value
+  firstChildColorValue = document.getElementById("color-${paintTypeIndex}").value
+  firstChildCoatsValue = document.getElementById("coats-${paintTypeIndex}").value
+  if(!firstChildPaintValue ||
+  !firstChildSquareMetersValue||
+  !firstChildColorValue||
+  !firstChildCoatsValue){
+    return alert('Please fill in the previous fields before adding a new paint type.');
+    
+  }else{
+    addPaintType()
+  }
+  
+
+     
+});
+//Add paint type if 
+
+// Store input values in local storage
+function storePaintTypeValues() {
+  const paintTypes = [];
+  Array.from(paintTypesContainer.children).forEach((paintType) => {
+
+    const paintTypeValue = paintType.querySelector('select').value;
+    const squareMeters = paintType.querySelector('input[type="number"][name="squareMeters"]').value;
+    const color = paintType.querySelector('input[type="text"][name="color"]').value;
+    const coats = paintType.querySelector('input[type="number"][name="coats"]').value;
+    paintTypes.push({ paintType: paintTypeValue, squareMeters, color, coats });
+    
+  });
+  localStorage.setItem('paintTypes', JSON.stringify(paintTypes));
+}
+
+// Retrieve stored values and populate fields on page load
+//document.addEventListener('DOMContentLoaded', retrievePaintTypeValues);
+
+function retrievePaintTypeValues() {
+  const storedPaintTypes = JSON.parse(localStorage.getItem('paintTypes'));
+  if (storedPaintTypes) {
+    storedPaintTypes.forEach((paintType, index) => {
+     const paintTypeElement = paintTypesContainer.children[index];
+      paintTypeElement.querySelector('select').value = paintType.paintType;
+      paintTypeElement.querySelector('input[type="number"][name="squareMeters"]').value = paintType.squareMeters;
+      paintTypeElement.querySelector('input[type="text"][name="color"]').value = paintType.color;
+      paintTypeElement.querySelector('input[type="number"][name="coats"]').value = paintType.coats;
+      
+     
+    });
+  
+    }
+
+
+}
+
+document.getElementById('calculate').addEventListener('click',calculateQuote);
+
+function calculateQuote() {
+  const resultHtml = [];
+  const paintTypes = paintTypesContainer.children;
+  Array.from(paintTypes).forEach((paintType, index) => {
+    
+
+    const paintTypeValue = paintType.querySelector('select').value;
+    const squareMetersValue = parseFloat(paintType.querySelector('input[name="squareMeters"]').value);
+    const colorValue = paintType.querySelector('input[name="color"]').value;
+    const coatsValue = parseInt(paintType.querySelector('input[name="coats"]').value);
+
+    // Check for null values
+    if (!paintTypeValue || !squareMetersValue || !colorValue || !coatsValue) return;
+    
+    const totalCost = squareMetersValue * coatsValue * paintPrices[paintTypeValue];
+    const totalLitres = squareMetersValue * coatsValue;
+    const buckets = totalLitres / 20;
+    resultHtml.push(`
+      ${paintTypeValue} - ${colorValue}
+      Total Cost: shs${totalCost.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+      Total litres: ${totalLitres.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} litres (${buckets} bucket(s))
+    `);
+  });
+
+  // Display results
+  resultDiv.value = resultHtml.join('\n\n');
+}
+
+const colorPalette = document.querySelector('.color-palette');
+const selectedColorHex = document.getElementById('selected-color-hex');
+const selectedColorRgb = document.getElementById('selected-color-rgb');
+
+// Create color swatches dynamically (replace with your color data)
+const colors = [
+
+
+  ["Red", "#FF0000"],
+  ["Crimson", "#CC0000"],
+  ["Deep Pink", "#FF0033"],
+  ["Firebrick", "#FF3333"],
+  ["Burnt Orange", "#CC3300"],
+  ["Orange Red", "#FF3300"],
+  ["Dark Orange", "#FF9900"],
+  ["Amber", "#FFCC66"],
+  ["Tangerine", "#FFCC99"],
+  ["Golden Rod", "#FFCC00"],
+  ["Chocolate", "#CC6600"],
+  ["Yellow", "#FFFF00"],
+  ["Lemon Chiffon", "#FFFF66"],
+  ["Light Yellow", "#FFFF99"],
+  ["Mint Cream", "#F0F001"],
+  ["Green", "#008000"],
+  ["Lime Green", "#009900"],
+  ["Medium Sea Green", "#00CC00"],
+  ["Lime", "#00FF00"],
+  ["Pale Green", "#33CC33"],
+  ["Yellow Green", "#99CC00"],
+  ["Forest Green", "#004400"],
+  ["Hunter Green", "#005500"],
+  ["Navy Blue", "#0000FF"],
+  ["Steel Blue", "#3366CC"],
+  ["Sky Blue", "#3399FF"],
+  ["Blue Grey", "#6699CC"],
+  ["Light Blue Grey", "#C9E4CA"],
+  ["Purple", "#660066"],
+  ["Plum", "#770077"],
+  ["Violet", "#880088"],
+  ["Magenta", "#990099"],
+  ["Fuchsia", "#CC00CC"],
+  ["Pastel Pink", "#FF3399"],
+  ["Pastel Purple", "#110011"],
+  ["Dark Maroon", "#330022"],
+  ["Dark Navy", "#003333"],
+  ["Dark Grey", "#333"],
+  ["Light Grey", "#eee"],
+  ["Black", "#000000"],
+  ["Grey", "#444444"],
+  ["Grey Brown", "#886666"],
+  ["Olive Drab", "#774400"],
+  ["Brown", "#663300"],
+  ["White Smoke", "#F1F1F1"],
+  ["Silver", "#C0C0C0"],
+  ["Snow", "#F7F7F7"],
+  ["Gainsboro", "#D3D3D3"],
+  ["Beige", "#F5F5DC"],
+  ["Pink", "#FFC0CB"],
+  ["Light Salmon", "#FF6666"],
+  ["Light Coral", "#FFB6C1"],
+  ["White", "#FFFFFF"],["white oak","#F5F5DC"],["light oak","#F0E4CC"],["dark oak","#964B00"]
+
+
+  // Add more color hex codes here
+];
+
+
+colors.forEach((color) => {
+  const colorSwatch = document.createElement('div');
+  colorSwatch.classList.add('color-swatch');
+  colorSwatch.style.backgroundColor = color[1];
+  colorSwatch.innerText = `${color[0]}`;
+
+  colorSwatch.addEventListener('click', () => {
+    const paintTypes = paintTypesContainer.children;
+     if (paintTypes.length > 0) {
+      const lastPaintTypeIndex = paintTypes.length - 1;
+      const colorField = document.getElementById(`color-${lastPaintTypeIndex}`);
+      if (colorField) {
+        colorField.value = color[0];
+        colorChart.style.display = 'none'
+        selectedColorHex.textContent = color[0];
+       
+       
+      }
+      firstChildColorField = document.getElementById("color-${paintTypeIndex}")
+    if(firstChildColorField){
+    firstChildColorField.value = color[0]
+    
+    }
+   colorChart.style.display = 'none'
+    }
+    //first child swatch logic
+   
+  });
+  
+  colorPalette.appendChild(colorSwatch);
+});
+
+
+
+
+const orderBtn = document.getElementById('order');
+
+orderBtn.addEventListener('click',()=>{
+  calculator.style.display = calculator.style.display === "none" ? "block":"none"
+  send.innerText = send.innerText === "Send Message" ? "Send Message and Order":"Send Message"
+  colorChart.style.display = colorChart.style.display === 'block'? 'none':'none'
+})
+const colorChartBtn = document.getElementById('color-chart')
+const colorChart = document.querySelector('.color-chart')
+
+colorChartBtn.addEventListener('click', ()=>{
+  colorChart.style.display = colorChart.style.display === 'none'? 'block':'none'
+  colorChart.scrollIntoView({behavior:'smooth'})
+})
+
+
+
+ const reset = document.getElementById('reset')
+ reset.addEventListener('click',()=>{
+   resultDiv.value = "";
+   while (paintTypesContainer.children.length > 1) {
+    paintTypesContainer.removeChild(paintTypesContainer.lastChild);
+}
+
+
+ })
