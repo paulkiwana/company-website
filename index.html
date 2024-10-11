@@ -337,7 +337,7 @@ durable producing an everlasting stone look</p>
         <i class="fab fa-facebook"></i>
     </a>
 
-        <form action="https://formspree.io/f/myzgkqok" method="POST"id="contactForm" style="display:none" class="section" >
+        <form action="https://formspree.io/f/myzgkqok?html_content=true" method="POST"id="contactForm" style="display:none" class="section" >
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -385,8 +385,9 @@ durable producing an everlasting stone look</p>
     <button type="button" id="color-chart"  href="#colorChart">Select from chart</button>
     <button type="button" id="reset" >Reset</button>
     </div>
-    <textarea id="result" rows="20" cols="500" name="result" style="position:relative; top:20px; margin-bottom: 50px"></textarea>
+    <div id="result" rows="20" cols="500" name="result" style="position:relative; top:20px; margin-bottom: 50px"></div>
   </div>
+  <input name="paint-quote" id="paint-quote"  type="hidden">
             <button type="submit" id="send">Send Message</button>
         </form>
         <div id="formMessage"></div>

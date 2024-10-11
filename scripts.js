@@ -473,7 +473,7 @@ function retrievePaintTypeValues() {
 
 document.getElementById('calculate').addEventListener('click',calculateQuote);
 
-function calculateQuote() {
+/*function calculateQuote() {
   const resultHtml = [];
   const paintTypes = paintTypesContainer.children;
   Array.from(paintTypes).forEach((paintType, index) => {
@@ -499,7 +499,60 @@ function calculateQuote() {
 
   // Display results
   resultDiv.value = resultHtml.join('\n\n');
+}*/
+
+function calculateQuote() {
+    const resultHtml = [];
+    const paintTypes = paintTypesContainer.children;
+    const tableHeaders = ['Paint Type', 'Color', 'Total Cost', 'Total Litres', 'Buckets'];
+
+    // Create table header
+    resultHtml.push('<table>');
+    resultHtml.push('<tr>');
+    tableHeaders.forEach(header => {
+        resultHtml.push(`<th>${header}</th>`);
+    });
+    resultHtml.push('</tr>');
+
+    Array.from(paintTypes).forEach((paintType, index) => {
+        const paintTypeValue = paintType.querySelector('select').value;
+        const squareMetersValue = parseFloat(paintType.querySelector('input[name="squareMeters"]').value);
+        const colorValue = paintType.querySelector('input[name="color"]').value;
+        const coatsValue = parseInt(paintType.querySelector('input[name="coats"]').value);
+
+        // Check for null values
+        if (!paintTypeValue || !squareMetersValue || !colorValue || !coatsValue) return;
+
+        const totalCost = squareMetersValue * coatsValue * paintPrices[paintTypeValue];
+        const totalLitres = squareMetersValue * coatsValue;
+        const buckets = totalLitres / 20;
+
+        // Create table row
+        resultHtml.push('<tr>');
+        resultHtml.push(`
+            <td>${paintTypeValue}</td>
+            <td>${colorValue}</td>
+            <td>shs${totalCost.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+            <td>${totalLitres.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} litres</td>
+            <td>${buckets} bucket(s)</td>
+        `);
+        resultHtml.push('</tr>');
+    });
+
+    // Close table
+    resultHtml.push('</table>');
+
+    // Join and display resultHtml
+    const resultHtmlString = resultHtml.join('');
+    const result = document.getElementById('result');
+    
+    result.innerHTML = resultHtmlString
+    const paintQuote = document.getElementById('paint-quote')
+    
+    paintQuote.value = result.innerText
+   console.log(paintQuote.value)
 }
+
 
 const colorPalette = document.querySelector('.color-palette');
 const selectedColorHex = document.getElementById('selected-color-hex');
@@ -622,10 +675,11 @@ colorChartBtn.addEventListener('click', ()=>{
 
  const reset = document.getElementById('reset')
  reset.addEventListener('click',()=>{
-   resultDiv.value = "";
+   result.innerHTML = "";
    while (paintTypesContainer.children.length > 1) {
     paintTypesContainer.removeChild(paintTypesContainer.lastChild);
 }
-
-
+document.querySelector('input[name="squareMeters"]').value =""
+document.querySelector('input[name="color"]').value =""
+document.querySelector('input[name="coats"]').value =""
  })
