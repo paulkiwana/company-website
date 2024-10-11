@@ -533,8 +533,8 @@ function calculateQuote() {
             <td>${paintTypeValue}</td>
             <td>${colorValue}</td>
             <td>shs${totalCost.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
-            <td>${totalLitres.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} litres</td>
-            <td>${buckets} bucket(s)</td>
+            <td>${totalLitres.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} ltr(s)</td>
+            <td>${buckets} bckt(s)</td>
         `);
         resultHtml.push('</tr>');
     });
