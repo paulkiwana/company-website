@@ -1,4 +1,4 @@
-function toggleSidebar() {
+/*function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     const content = document.querySelector('.content');
     sidebar.classList.toggle('visible');
@@ -17,7 +17,7 @@ formMessage.style.backgroundColor = 'yellow'
 });
 
 
-//home toggle logic
+//home toggle logic-
 const homeToggle = document.getElementById('home-toggle');
 //global variable to allow me call this logic in the side bar navs 
 //and header navs without having to write it again #low-redundancy :) :D ;)
@@ -473,34 +473,6 @@ function retrievePaintTypeValues() {
 
 document.getElementById('calculate').addEventListener('click',calculateQuote);
 
-/*function calculateQuote() {
-  const resultHtml = [];
-  const paintTypes = paintTypesContainer.children;
-  Array.from(paintTypes).forEach((paintType, index) => {
-    
-
-    const paintTypeValue = paintType.querySelector('select').value;
-    const squareMetersValue = parseFloat(paintType.querySelector('input[name="squareMeters"]').value);
-    const colorValue = paintType.querySelector('input[name="color"]').value;
-    const coatsValue = parseInt(paintType.querySelector('input[name="coats"]').value);
-
-    // Check for null values
-    if (!paintTypeValue || !squareMetersValue || !colorValue || !coatsValue) return;
-    
-    const totalCost = squareMetersValue * coatsValue * paintPrices[paintTypeValue];
-    const totalLitres = squareMetersValue * coatsValue;
-    const buckets = totalLitres / 20;
-    resultHtml.push(`
-      ${paintTypeValue} - ${colorValue}
-      Total Cost: shs${totalCost.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-      Total litres: ${totalLitres.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")} litres (${buckets} bucket(s))
-    `);
-  });
-
-  // Display results
-  resultDiv.value = resultHtml.join('\n\n');
-}*/
-
 function calculateQuote() {
     const resultHtml = [];
     const paintTypes = paintTypesContainer.children;
@@ -682,4 +654,144 @@ colorChartBtn.addEventListener('click', ()=>{
 document.querySelector('input[name="squareMeters"]').value =""
 document.querySelector('input[name="color"]').value =""
 document.querySelector('input[name="coats"]').value =""
- })
+ })*/
+ document.addEventListener('DOMContentLoaded', function() {
+    // Toggle sidebar
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const sidebar = document.getElementById('sidebar');
+    const content = document.querySelector('.content');
+
+    toggleBtn.addEventListener('click', function() {
+        sidebar.classList.toggle('visible');
+        content.classList.toggle('shifted');
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target)) {
+            sidebar.classList.remove('visible');
+            content.classList.remove('shifted');
+        }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Slideshow
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    setInterval(nextSlide, 5000);
+
+    // Form submission
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function() {
+       // e.preventDefault();
+        // Add your form submission logic here
+        alert('Thank you for your message. We will get back to you soon!');
+        contactForm.reset();
+    });
+
+    // Fade-in animation for sections
+    const sections = document.querySelectorAll('section');
+    const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                fadeInObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        fadeInObserver.observe(section);
+    });
+});
+// interior product list logic
+const products = document.getElementById('products')
+const interior = document.getElementById('interior')
+const intBtn = document.querySelector('.interior')
+const backBtn = document.getElementById("back-to-featured");
+intBtn.addEventListener('click', ()=>{
+    interior.style.display = 'flex'
+    products.style.display ='none'
+    backBtn.style.display = 'block'
+})
+// back to featured products section
+
+backBtn.addEventListener("click", ()=>{
+    products.style.display = "block";
+    backBtn.style.display = "none";
+    interior.style.display = 'none';
+})
+
+// exterior product list logic
+
+const exterior = document.getElementById('exterior')
+const extBtn = document.querySelector('.exterior')
+
+extBtn.addEventListener('click', ()=>{
+    exterior.style.display = 'flex'
+    products.style.display ='none'
+    backBtn2.style.display = 'block'
+})
+// back to featured products section
+const backBtn2 = document.getElementById("back-to-featured2");
+backBtn2.addEventListener("click", ()=>{
+    products.style.display = "block";
+    backBtn2.style.display = "none";
+    exterior.style.display = 'none';
+})
+// texture product list logic
+
+const texture = document.getElementById('texture')
+const textBtn = document.querySelector('.texture')
+
+textBtn.addEventListener('click', ()=>{
+    texture.style.display = 'flex'
+    products.style.display ='none'
+    backBtn3.style.display = 'block'
+})
+// back to featured products section
+const backBtn3 = document.getElementById("back-to-featured3");
+backBtn3.addEventListener("click", ()=>{
+    products.style.display = "block";
+    backBtn3.style.display = "none";
+    texture.style.display = 'none';
+})
+//gallery logic
+const residentials = document.getElementById('residentials')
+const gallery = document.getElementById('gallery')
+const projects = document.getElementById('projects')
+const galleryBtn = document.getElementById('galleryBtn')
+
+residentials.addEventListener('click', ()=>{
+gallery.style.display = 'block'
+projects.style.display = 'none'
+galleryBtn.style.display = 'block' 
+})
+
+
+
+galleryBtn.addEventListener('click',()=>{
+    gallery.style.display = 'none'
+    projects.style.display = 'block'
+    galleryBtn.style.display = 'none'
+})
