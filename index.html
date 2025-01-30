@@ -12,11 +12,11 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+<!--<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
     <div class="header">
 
         <div class="logo" >  
-<!--<div class="logo-background"><span class="logo-text">JR</span></div>-->
+
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/logo3.png" >
         </div>
         <div class="company-info">
@@ -43,11 +43,39 @@
             <a href="#projects" id="project-toggle">Projects</a>
             <a id= "contact-toggle" href="#contact">Contact</a>
         </nav>
-    </div>
+    </div>-->
+    <!--new code-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/logo3.png" alt="Jose River Coating Logo">
+            </div>
+            <div class="company-info">
+                <h1 class="name">Jose River Coating Inv Ltd</h1>
+                <p class="slogan">Reliable Coatings</p>
+            </div>
+            <nav class="header-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="toggle-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
 
-<div class='content'>
+    <nav class="sidebar" id="sidebar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+<!--new code-->
+<main class='content'>
     
-    <section id="home" class="hero">
+    <!--<section id="home" class="hero">
         <div class="mySlides fade">
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero1.png">
             
@@ -64,9 +92,27 @@
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero4.png" >
 </div>
 <a href="#products" class="cta-button">Explore Our Products</a>
+    </section>-->
+    <section id="home" class="hero">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero1.png" alt="Jose River Coating Hero 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero2.png" alt="Jose River Coating Hero 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero3.png" alt="Jose River Coating Hero 3">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/joserivercoatinghero4.png" alt="Jose River Coating Hero 4">
+            </div>
+        </div>
+        <a href="#products" class="cta-button">Explore Our Products</a>
     </section>
 
- <section id ='nav-image'>
+
+ <!--<section id ='nav-image'>
 <div><img id='int' class="heartbeat" src="https://github.com/paulkiwana/My-gallery/blob/main/Untitled1_20240728220716.jpg?raw=true">
 <h3>Interior Paints</h3>
 </div>
@@ -78,36 +124,10 @@
 <img id="text"  src="https://github.com/paulkiwana/My-gallery/blob/main/Untitled1_20240728215956.jpg?raw=true">
 <h3>Texture Paints</h3>
 </div>
- </section>
+ </section>-->
 
-<!--<section id="welcome">
-  <div>
-    <h2>We Guarantee</h2>
-    <p>
-      "Regardless of the construction cost of your home, apartment or commercial building, poorly chosen colors can greatly diminish its perceived value at first glance. Don't let mediocre aesthetics give the wrong impression! Our expert painting and texture finishing services ensure a flawless visual appeal, allowing you to direct your focus elsewhere . Let us handle the details, and elevate your space to reflect its true worth!"
-    </p>
-  </div>
-  <div>
-    <h2>What we do</h2>
-   <p> At Jose River Coating, we take pride in transforming your home's appearance to match your unique style. We manufacture and supply a wide range of high-quality paints and finishes, including:
-<br><br>
--Silk<br>
--Weather Guard<br>
--Emulsion<br>
--Matt<br>
--Emprofile<br>
--Undercoat<br>
--Italian Stucco<br><br>
-  Plus, we offer decorative stones to add an extra touch of elegance!
-</p>
-  </div>
- 
-</section>
-<div class="bucket">
-  
-  <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/bucket.png">
-</div>-->
-    <section id="about" class="about-us section" style="display:none">
+
+   <!-- <section id="about" class="about-us section" style="display:none">
        
  <h2>Who We Are</h2>
         <div class="about-content">
@@ -131,9 +151,28 @@
 
         </div>
 
+    </section>-->
+    <section id="about" class="about-us">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="about-content">
+                <h3>Background</h3>
+                <p>Jose River Coatings is a fast-growing private limited company founded in 2015 to meet the demands of the world market for paint solutions. We started as a manufacturer of Emulsions, then expanded into Decorative and Texture paints. Our unique products have given us a leading position in the world of paints.</p>
+                
+                <h3>Vision</h3>
+                <p>To be the leading producer and supplier of high-quality and environmentally friendly paints and related products in the African Continent.</p>
+
+                <h3>Goals</h3>
+                <ul>
+                    <li>To offer the best option for our clients to maximize their satisfaction in designing and painting.</li>
+                    <li>To provide products and services to our customers at short notice and best rates.</li>
+                    <li>To diversify our products and services to cater to clients' needs without compromising quality.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="products" class="featured-products section" style="display:none">
+    <!--<section id="products" class="featured-products section" style="display:none">
         <h2>Featured Products</h2>
         <div class="product-list">
             <div class="product-item interior">
@@ -156,10 +195,32 @@
                 <p>This type of paint creates a textured finish on surfaces. It can be used to add visual interest, hide imperfections, or create a unique atmosphere. Texture paint often contains additives that provide a rough or textured appearance.</p>
             </div>
         </div>
+    </section>-->
+    <section id="products" class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-item interior">
+                    <img src="https://github.com/paulkiwana/My-gallery/blob/main/Untitled1_20240728220716.jpg?raw=true" alt="Interior Paints">
+                    <h3>Interior Paints</h3>
+                    <p>High-quality paints for interior walls, ceilings, and other surfaces. Formulated for smooth, even finish and low VOC emissions.</p>
+                </div>
+                <div class="product-item exterior">
+                    <img src="https://github.com/paulkiwana/My-gallery/blob/main/Untitled1_20240728220333.jpg?raw=true" alt="Exterior Paints">
+                    <h3>Exterior Paints</h3>
+                    <p>Durable paints designed to withstand harsh outdoor conditions. Provides excellent protection against weather, fading, and mildew.</p>
+                </div>
+                <div class="product-item texture">
+                    <img src="https://github.com/paulkiwana/My-gallery/blob/main/Untitled1_20240728215956.jpg?raw=true" alt="Texture Paints">
+                    <h3>Texture Paints</h3>
+                    <p>Create unique textures and finishes for your walls. Perfect for adding visual interest and hiding surface imperfections.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
-<div id="interior" style="display:none" class="section">
-<div>
+<section id="interior" style="display:none" class="container section">
+<div class='paintType'>
 <h3>Undercoat</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Undercoat.jpg">
 <p>This can be used on interior and exterior concrete, plaster, wood, metal. It prepares the surface an ideally smooth foundation for the finishing coats.
@@ -167,42 +228,43 @@ it can be applied by brush, rollers or spray gun.
 </p>
 </div>
 
-<div>
+<div class='paintType'>
 <h3>Matt Emulsion</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Matt_Emulsion.jpg">
 <p>It's easy to apply and produces a beautiful matt finish, which hides all surface impactions. Matt Emulsion can be used on interior and exterior surfaces like; conccrete, plaster, bricks,
 and even previously painted walls. It can also be applied brush, rollers, and spray.
 </p>
 </div>
-<div>
+<div class='paintType'>
 <h3>Italian Stucco</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Italian_stucco.jpg">
 <p>The marble like finish is magnificent on feature walls,columns,staircase,reception arears and is suitable for indoors application.</p>
 </div>
 
-<div>
+<div class='paintType'>
 <h3>Vinyl Silk</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Vinyl_silk.jpg">
 <p>Vinyl Silk is a type of paint that is known for it's durable, shiny finish and is used for interior design projects. </p>
-</div>
-<button id="back-to-featured" style="display:none">Back</button>
-</div>
+</section>
 
-<div id="exterior" style="display:none" class="section">
-<div class="prmr">
+</div>
+<button id="back-to-featured"  style="display:none">Back</button>
+
+<section id="exterior" style="display:none" class="container section">
+<div class="paintType">
 <h3>Primer</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/primer.jpg">
 <p>Primer paint is special coating used on surfaces before painting. It is designed improve adhesion of paint to the surface, Increase paints durability, offer additional protection for the material being painted, 
 acts as a sealer for porous surfaces and act as a stain blocker for walls</p>
 </div>
 
-<div class="WG">
+<div class="paintType">
 <h3>Weather Guard</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Weather_Guard.jpg">
 <p>Weather guard is a type of exterior paint that offers a high-quality finish that can withstand various weather conditions.Its a pure acrylic copolymer emulsion providing maximum protection for exterior walls of homes, hotels and professional buildings</p>
 </div>
 
-<div class="UC">
+<div class="paintType">
 <h3>Undercoat</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Undercoat.jpg">
 <p>This can be used on interior and exterior concrete, plaster, wood, metal. It prepares the surface an ideally smooth foundation for the finishing coats.
@@ -210,18 +272,19 @@ it can be applied by brush, rollers or spray gun.
 </p>
 </div>
 
-<div class="matt">
+<div class="paintType">
 <h3>Matt Emulsion</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Matt_Emulsion.jpg">
 <p>It's easy to apply and produces a beautiful matt finish, which hides all surface impactions. Matt Emulsion can be used on interior and exterior surfaces like; conccrete, plaster, bricks,
 and even previously painted walls. It can also be applied brush, rollers, and spray.
 </p>
 </div>
-<button id="back-to-featured2" style="display:none">Back</button>
-</div>
 
-<div id="texture" style="display:none" class="section">
-<div>
+</section>
+<button id="back-to-featured2"  style="display:none">Back</button>
+
+<section id="texture" style="display:none" class="container section">
+<div class="paintType">
 <h3>Texture Emprofile(Paste)</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Emprofile_paste.jpg">
 <p>A very hard washable internal and external plasticized coating based on acrylic resins, using fine crushed aggregates and inorganic color fast pigments creating
@@ -229,7 +292,7 @@ a texture with varying degrees of vertical stiations. Together with our acrylic 
 washed away easily</p>
 </div>
 
-<div>
+<div class="paintType">
 <h3>Ritmix(Rough and tough)</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Ritmix.jpg">
 <p>An acrylic resin based texture, which is engineered as a rough finish with excellent resistant qualities. Because the pigments fully dispersed within
@@ -237,29 +300,29 @@ the texture, this product maintains color and finish for many years. Together wi
 as dirt and residues can be washed away easily</p>
 </div>
 
-<div>
+<div class="paintType">
 <h3>Glaze</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Glaze.jpg">
 <p>Glaze paint is a special kind of paint that is used to add texture and depth to surface. It is a semi-transparent layer applied over a complementary solid color
 or basecoat.It is used to create rich, iridescent colors and used for decorative walls, art and furniture </p>
 </div>
 
-<div>
+<div class="paintType">
 <h3>Stone Finish</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Stone_finish.jpg">
 <p>An extremely superior coating using natural quartzite in sizes ranging from 1mm to 3mm embedded in an enhanced acrylic blinder which is extremely hard and 
 durable producing an everlasting stone look</p>
 </div>
 
-<div>
+<div class="paintType">
 <h3>Emcourse</h3>
 <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Emcourse.jpg">
 <p>A heavy body heavy textured coating for internal and external use. It exhibits excellent obliteration properties and flexibility making it ideal to cover hairline cracks and poor plasterwork. Together with our acrylic glaze finish, the texture will self maintain as dirt and residues can be washed away easily</p>
 </div>
-<button id="back-to-featured3">Back</button>
-</div>
 
-<section id='projects' style="display:none" class="finished-projects section">
+</section>
+<button id="back-to-featured3"  style="display:none">Back</button>
+<!--<section id='projects' style="display:none" class="finished-projects section">
 
 <h2>Finished Projects</h2>
         <div class="project-list">
@@ -305,6 +368,54 @@ durable producing an everlasting stone look</p>
     </a>
             </div>
         </div>
+</section>-->
+<section id="projects" class="finished-projects">
+    <div class="container">
+        <h2>Finished Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Ideal_classic_hostel.jpg" alt="Ideal Hostels">
+                <h3>Ideal Hostels</h3>
+                <p>Trusted supplier for Ideal Hostels in Nakawa, Kampala. We've worked on several Ideal Hostel projects, including Ideal Platinum and Ideal Annex.</p>
+                <a href="https://www.facebook.com/profile.php?id=100077929460764" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div id = 'residentials' class="project">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/residentials.jpg" alt="Residential Projects">
+                <h3>Residential Projects</h3>
+                <p>Transforming homes with our high-quality paints and finishes. We offer a wide range of colors and textures to suit every style.</p>
+                <a href="#gallery" class="social-link" id="gallery-link">
+                    <i class="fas fa-images"></i>
+                </a>
+            </div>
+            <div class="project">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/Denver_elysium_apartments.jpg" alt="Denver Elysium Apartments">
+                <h3>Denver Elysium Apartments</h3>
+                <p>Providing paint solutions for luxury apartments. Our work ensures tenant satisfaction and comfort.</p>
+                <a href="http://www.denverelysium.com" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="https://www.facebook.com/Denverelysiumapartments" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+
+            <div class="project four">
+                <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/The_Hickory.jpg" alt="The Hickory Restaurant">
+                <h3>The Hickory</h3>
+                <p>We supply The Hickory with Italian Stucco among other coatings which contribute to their signature ambiance</p>
+                <a href='https://thehickorykampala.com' target='_blank'>
+                    <i class="fa-solid fa-globe" style="font-size: 36px; color:#3498DB;"></i>
+                  </a>&nbsp;&nbsp;
+                  <a href="https://www.facebook.com/TheHickoryKampala?mibextid=ZbWKwL" class="iconfb" target="_blank">
+          <i class="fab fa-facebook"></i>
+      </a>&nbsp;&nbsp;
+       <a href="https://www.instagram.com/thehickory_kla?igsh=MnJtZ2FwZ3ZtdnE4"  target="_blank">
+          <i class="fa-brands fa-instagram" style="color: salmon; font-size:36px;"></i>
+      </a>
+        </div>
+    </div>
 </section>
 
 <section style="display:none" id="gallery" >
@@ -319,13 +430,10 @@ durable producing an everlasting stone look</p>
         <div class="finished four">
           <img src="https://raw.githubusercontent.com/paulkiwana/My-gallery/main/house3.jpg"></div>
   </div>
-  <div style="position:relative; left:-00px; top:30px">
-  <button id="galleryBtn">Back</button>
-  </div>
 </section>
+<button id="galleryBtn">Back</button>
 
-
-    <section id="contact" class="contact-form">
+    <!--<section id="contact" class="contact-form">
         <h2>Contact Us</h2>
     
 <a href="https://maps.app.goo.gl/3bvmvearMjgejmYZ6" class="location" target="_blank"><i class="fa-solid fa-location-dot"></i></a><h3>ADDRESS</h3><p>Mbalwa,Namugongo, P.O BOX 113337, Kampala, Uganda</p>
@@ -395,17 +503,39 @@ durable producing an everlasting stone look</p>
     <div id="colorChart" class="color-chart"  style="display:none; ">
       <div class="color-palette">
    </div>
-   </div>
+   </div>-->
+   <section id="contact" class="contact-form">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> Mbalwa, Namugongo, P.O BOX 113337, Kampala, Uganda</p>
+            <p><i class="fa-solid fa-phone"></i> +256 703 608499</p>
+            <a href="https://wa.me/+256782340791" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100024195234061" class="social-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <form action="https://formspree.io/f/myzgkqok?html_content=true" method="POST" id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
     
-</div>
+</main>
 <footer>
   <p>Copyright &copy; 2024 Jose River Coating Inv Ltd</p>
-  <a href="https://wa.me/+256782340791" class="iconwa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-<a href="https://www.facebook.com/profile.php?id=100024195234061&mibextid=ZbWKwL" class="iconfb" target="_blank">
-        <i class="fab fa-facebook" ></i>
-    </a>
+
 </footer>
 
     <script src="scripts.js">
