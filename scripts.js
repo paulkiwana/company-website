@@ -121,10 +121,13 @@ backBtn3.addEventListener("click", ()=>{
     texture.style.display = 'none';
 })
 //gallery logic
+const ideal = document.getElementById('ideal')
 const residentials = document.getElementById('residentials')
 const gallery = document.getElementById('gallery')
 const projects = document.getElementById('projects')
 const galleryBtn = document.getElementById('galleryBtn')
+const gallery2 = document.getElementById('gallery2')
+const galleryBtn2 = document.getElementById('galleryBtn2')
 
 residentials.addEventListener('click', ()=>{
 gallery.style.display = 'block'
@@ -132,12 +135,21 @@ projects.style.display = 'none'
 galleryBtn.style.display = 'block' 
 })
 
-
+ideal.addEventListener('click', ()=>{
+    gallery2.style.display ="block"
+    projects.style.display ="none"
+    galleryBtn2.style.display = 'block' 
+})
 
 galleryBtn.addEventListener('click',()=>{
     gallery.style.display = 'none'
     projects.style.display = 'block'
     galleryBtn.style.display = 'none'
+})
+galleryBtn2.addEventListener('click',()=>{
+    gallery2.style.display = 'none'
+    projects.style.display = 'block'
+    galleryBtn2.style.display = 'none'
 })
 
 //CALCULATOR LOGIC... it's hella big :(
