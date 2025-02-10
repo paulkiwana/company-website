@@ -380,7 +380,7 @@ from {
 
 
 
-#gallery {
+#gallery,#gallery2 {
     padding: 50px 20px;
     text-align: center;
     display: none;
@@ -391,12 +391,7 @@ from {
     background-color:#f4f4f9;
     color:#333;
 }
-.gallery-items{
-    display: flex;
-  /*  justify-content: center;*/
-    gap: 20px;
-    flex-wrap: wrap;
-}
+
 #back-to-featured,#back-to-featured2,#back-to-featured3{
     background-color: rgb(123,0,88) ;
     color: yellow;
@@ -419,7 +414,7 @@ from {
   
 }
 /*new code*/
-#galleryBtn{
+#galleryBtn,#galleryBtn2{
     position:relative;
     left:30px;
     top: -50px;
@@ -432,6 +427,12 @@ from {
     transition: background-color 0.3s, color 0.3s;
     /*transition: transform 0.5s ease; */
   }
+
+  #gallery img,#gallery2 img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+}   
   #calculate, /*#order*/#color-chart,#add-paint-type,#reset {
     background-color: rgb(123,0,88) ;
     color: yellow;
@@ -594,7 +595,7 @@ footer {
     }
 
     .product-item,
-    .project,.paintType,.finished,#calc-btns {
+    .project,.paintType,#calc-btns {
         flex-basis: calc(33.333% - 1.33rem);
 
 
@@ -603,8 +604,18 @@ footer {
       #calc-btns{
           gap:80px;
       }
-      
-      
+      .gallery-items{
+        display: grid;
+      /*  justify-content: center;*/
+        grid-gap: 20px;
+        /*flex-wrap: wrap;*/
+        grid-template-columns: repeat(3, 1fr);
+}
+   #gallery img,#gallery2 img{
+       width:100%;
+       height: 100%;
+       object-fit:cover;
+   }   
 }
 
 /* Animations */
@@ -615,4 +626,5 @@ footer {
 
 .fade-in {
     animation: fadeIn 1s ease-in-out;
-}
+        }
+    
