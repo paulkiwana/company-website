@@ -154,7 +154,7 @@ galleryBtn2.addEventListener('click',()=>{
 
 //CALCULATOR LOGIC... it's hella big :(
     const paintPrices = {
-        silk: 16000,
+        silk: 13000,
         weatherguard: 14000,
         emprofile: 8000,
         matt: 10000,
