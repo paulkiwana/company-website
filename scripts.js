@@ -154,9 +154,9 @@ galleryBtn2.addEventListener('click',()=>{
 
 //CALCULATOR LOGIC... it's hella big :(
     const paintPrices = {
-        silk: 15000,
-        weatherguard: 20000,
-        emprofile: 20000,
+        silk: 16000,
+        weatherguard: 14000,
+        emprofile: 8000,
         matt: 10000,
         undercoat: 2500,
         stucco: 25000,
