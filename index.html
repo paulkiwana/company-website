@@ -92,17 +92,17 @@
             <h2>Featured Products</h2>
             <div class="product-list">
                 <div class="product-item interior">
-                    <img src="./assets/interior_paint.jpg" alt="Interior Paints">
+                    <img src="./assets/interior_paint.jpg" alt="Interior Paints" onclick="openModal(this.src)">
                     <h3>Interior Paints</h3>
                     <p>High-quality paints for interior walls, ceilings, and other surfaces. Formulated for smooth, even finish and low VOC emissions.</p>
                 </div>
                 <div class="product-item exterior">
-                    <img src="./assets/exterior_paint.jpg" alt="Exterior Paints">
+                    <img src="./assets/exterior_paint.jpg" alt="Exterior Paints" onclick="openModal(this.src)">
                     <h3>Exterior Paints</h3>
                     <p>Durable paints designed to withstand harsh outdoor conditions. Provides excellent protection against weather, fading, and mildew.</p>
                 </div>
                 <div class="product-item texture">
-                    <img src="./assets/texture_paint.jpg" alt="Texture Paints">
+                    <img src="./assets/texture_paint.jpg" alt="Texture Paints" onclick="openModal(this.src)">
                     <h3>Texture Paints</h3>
                     <p>Create unique textures and finishes for your walls. Perfect for adding visual interest and hiding surface imperfections.</p>
                 </div>
@@ -110,10 +110,10 @@
         </div>
     </section>
     
-<section id="interior" style="display:none" class="container section">
+<section id="interior" style="display:none" class="container section" >
 <div class='paintType'>
 <h3>Undercoat</h3>
-<img src="./assets/Undercoat.jpg">
+<img src="./assets/Undercoat.jpg" class='image'onclick="openModal(this.src)">
 <p>This can be used on interior and exterior concrete, plaster, wood, metal. It prepares the surface an ideally smooth foundation for the finishing coats.
 it can be applied by brush, rollers or spray gun.
 </p>
@@ -121,20 +121,20 @@ it can be applied by brush, rollers or spray gun.
 
 <div class='paintType'>
 <h3>Matt Emulsion</h3>
-<img src="./assets/Matt_Emulsion.jpg">
+<img src="./assets/Matt_Emulsion.jpg" onclick="openModal(this.src)">
 <p>It's easy to apply and produces a beautiful matt finish, which hides all surface impactions. Matt Emulsion can be used on interior and exterior surfaces like; conccrete, plaster, bricks,
 and even previously painted walls. It can also be applied brush, rollers, and spray.
 </p>
 </div>
 <div class='paintType'>
 <h3>Italian Stucco</h3>
-<img src="./assets/Italian_stucco.jpg">
+<img src="./assets/Italian_stucco.jpg" onclick="openModal(this.src)">
 <p>The marble like finish is magnificent on feature walls,columns,staircase,reception arears and is suitable for indoors application.</p>
 </div>
 
 <div class='paintType'>
 <h3>Vinyl Silk</h3>
-<img src="./assets/Vinyl_silk.jpg">
+<img src="./assets/Vinyl_silk.jpg" onclick="openModal(this.src)">
 <p>Vinyl Silk is a type of paint that is known for it's durable, shiny finish and is used for interior design projects. </p>
 </section>
 
@@ -144,20 +144,19 @@ and even previously painted walls. It can also be applied brush, rollers, and sp
 <section id="exterior" style="display:none" class="container section">
 <div class="paintType">
 <h3>Primer</h3>
-<img src="./assets/primer.jpg">
-<p>Primer paint is special coating used on surfaces before painting. It is designed improve adhesion of paint to the surface, Increase paints durability, offer additional protection for the material being painted, 
-acts as a sealer for porous surfaces and act as a stain blocker for walls</p>
+<img src="./assets/primer.jpg" onclick="openModal(this.src)">
+<p>Primer paint is special coating used on surfaces before painting. It is designed improve adhesion of paint to the surface, Increase paints durability, offer additional protection for the material being painted ,acts as a sealer for porous surfaces and act as a stain blocker for walls</p>
 </div>
 
 <div class="paintType">
 <h3>Weather Guard</h3>
-<img src="./assets/Weather_Guard.jpg">
+<img src="./assets/Weather_Guard.jpg" onclick="openModal(this.src)">
 <p>Weather guard is a type of exterior paint that offers a high-quality finish that can withstand various weather conditions.Its a pure acrylic copolymer emulsion providing maximum protection for exterior walls of homes, hotels and professional buildings</p>
 </div>
 
 <div class="paintType">
 <h3>Undercoat</h3>
-<img src="./assets/Undercoat.jpg">
+<img src="./assets/Undercoat.jpg" onclick="openModal(this.src)">
 <p>This can be used on interior and exterior concrete, plaster, wood, metal. It prepares the surface an ideally smooth foundation for the finishing coats.
 it can be applied by brush, rollers or spray gun.
 </p>
@@ -165,7 +164,7 @@ it can be applied by brush, rollers or spray gun.
 
 <div class="paintType">
 <h3>Matt Emulsion</h3>
-<img src="./assets/Matt_Emulsion.jpg">
+<img src="./assets/Matt_Emulsion.jpg" onclick="openModal(this.src)">
 <p>It's easy to apply and produces a beautiful matt finish, which hides all surface impactions. Matt Emulsion can be used on interior and exterior surfaces like; conccrete, plaster, bricks,
 and even previously painted walls. It can also be applied brush, rollers, and spray.
 </p>
@@ -177,7 +176,7 @@ and even previously painted walls. It can also be applied brush, rollers, and sp
 <section id="texture" style="display:none" class="container section">
 <div class="paintType">
 <h3>Texture Emprofile(Paste)</h3>
-<img src="./assets/Emprofile_paste.jpg">
+<img src="./assets/Emprofile_paste.jpg" onclick="openModal(this.src)">
 <p>A very hard washable internal and external plasticized coating based on acrylic resins, using fine crushed aggregates and inorganic color fast pigments creating
 a texture with varying degrees of vertical stiations. Together with our acrylic glaze finish, the texture will self maintain as dirt and residues can be 
 washed away easily</p>
@@ -185,7 +184,7 @@ washed away easily</p>
 
 <div class="paintType">
 <h3>Ritmix(Rough and tough)</h3>
-<img src="./assets/Ritmix.jpg">
+<img src="./assets/Ritmix.jpg" onclick="openModal(this.src)">
 <p>An acrylic resin based texture, which is engineered as a rough finish with excellent resistant qualities. Because the pigments fully dispersed within
 the texture, this product maintains color and finish for many years. Together with our acrylic glaze finish, the texture will self maintain
 as dirt and residues can be washed away easily</p>
@@ -193,27 +192,30 @@ as dirt and residues can be washed away easily</p>
 
 <div class="paintType">
 <h3>Glaze</h3>
-<img src="./assets/Glaze.jpg">
+<img src="./assets/Glaze.jpg" onclick="openModal(this.src)">
 <p>Glaze paint is a special kind of paint that is used to add texture and depth to surface. It is a semi-transparent layer applied over a complementary solid color
 or basecoat.It is used to create rich, iridescent colors and used for decorative walls, art and furniture </p>
 </div>
 
 <div class="paintType">
 <h3>Stone Finish</h3>
-<img src="./assets/Stone_finish.jpg">
+<img src="./assets/Stone_finish.jpg" onclick="openModal(this.src)">
 <p>An extremely superior coating using natural quartzite in sizes ranging from 1mm to 3mm embedded in an enhanced acrylic blinder which is extremely hard and 
 durable producing an everlasting stone look</p>
 </div>
 
 <div class="paintType">
 <h3>Emcourse</h3>
-<img src="./assets/Emcourse.jpg">
+<img src="./assets/Emcourse.jpg" onclick="openModal(this.src)">
 <p>A heavy body heavy textured coating for internal and external use. It exhibits excellent obliteration properties and flexibility making it ideal to cover hairline cracks and poor plasterwork. Together with our acrylic glaze finish, the texture will self maintain as dirt and residues can be washed away easily</p>
 </div>
 
 </section>
 <button id="back-to-featured3"  style="display:none">Back</button>
 
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImage" class="modal-content">
+</div>
 <section id="projects" class="finished-projects">
     <div class="container">
         <h2>Finished Projects</h2>
@@ -270,7 +272,8 @@ durable producing an everlasting stone look</p>
   <h2>Houses Gallery</h2>
   <div class="gallery-items">
   <div class="finished one">
-    <img src="./assets/residentials.jpg"></div>
+    <img src="./assets/residentials.jpg">
+  </div>
     <div class="finished two">
       <img src="./assets/house1.jpg"></div>
       <div class="finished three">
@@ -411,16 +414,4 @@ s0.parentNode.insertBefore(s1,s0);
 <footer>
   <p>Copyright &copy; 2025 Jose River Coating Inv Ltd</p>
 <!--  <a href="https://wa.me/+256782340791" class="iconwa" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-<a href="https://www.facebook.com/profile.php?id=100024195234061&mibextid=ZbWKwL" class="iconfb" target="_blank">
-        <i class="fab fa-facebook" ></i>
-    </a>-->
-</footer>
-
-    <script src="scripts.js">
-
-</script>
-</body>
-            </html>
-    
+        <i cl
