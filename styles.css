@@ -53,6 +53,9 @@ a {
     z-index: 1000;
 }
 
+.zoom{
+
+}
 
 .company-info h1 {
     font-size: 1.5rem;
@@ -144,9 +147,24 @@ color: white;
     background-color: #575757;
 }
 
+.modal{
+    display:none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(70, 91, 115, 0.5);
 
+}
+.modal-content{
+    display: block;
+    max-width:90%;
+    max-height:90%;
+    margin:5% auto;
 
-
+}
 /* Main Content Styles */
 .content {
     padding-top: 80px;
@@ -278,24 +296,7 @@ section h2 {
 .product-item p {
     padding: 0 1rem 1rem;
 }
-.modal{
-    display:none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top:0;
-    width: 100%;
-    height:100%;
-    background-color: rgba(70, 91, 115, 0.5);
 
-}
-.modal-content{
-    display: block;
-    max-width:90%;
-    max-height:90%;
-    margin:5% auto;
-
-}
 /* Projects Styles */
 .project-list {
     display: flex;
@@ -612,9 +613,8 @@ footer {
     }
 
     .product-item,
-    .project,.paintType,#calc-btns {
+    .project,#calc-btns {
         flex-basis: calc(33.333% - 1.33rem);
-
 
     }
     
@@ -643,5 +643,4 @@ footer {
 
 .fade-in {
     animation: fadeIn 1s ease-in-out;
-        }
-    
+}
