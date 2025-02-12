@@ -494,7 +494,15 @@ galleryBtn2.addEventListener('click',()=>{
   document.querySelector('input[name="color"]').value =""
   document.querySelector('input[name="coats"]').value =""
    })
-function openModal(src){
+
+   const image = document.querySelector('.image')
+   image.addEventListener("click",()=>{
+       image.classList.toggle('zoom');
+   })
+  // document.querySelector('body').addEventListener('click',()=>{
+  //  image.classList.remove('zoom');
+  // })
+  function openModal(src){
       document.getElementById("modalImage").src = src;
       document.getElementById("imageModal").style.display = "block";
   }
@@ -502,3 +510,4 @@ function openModal(src){
     document.getElementById("imageModal").style.display = "none"; 
   }
   
+ 
