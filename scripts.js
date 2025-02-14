@@ -471,7 +471,7 @@ galleryBtn2.addEventListener('click',()=>{
     e.preventDefault();
     calculator.style.display = calculator.style.display === "none" ? "block":"none"
     send.innerText = send.innerText === "Send Message" ? "Send Message and Order":"Send Message"
-    order.innerText = order.innerText === "ORDER HERE(optional)" ? "Close Calculator": "ORDER HERE(optional)"
+    order.innerText = order.innerText === "Paint Calculator (optional)" ? "Close Calculator": "Paint Calculator (optional)"
     colorChart.style.display = colorChart.style.display === 'block'? 'none':'none'
   })
   const colorChartBtn = document.getElementById('color-chart')
