@@ -424,7 +424,7 @@ from {
             outline: none;       
     
 }
-#back-to-featured:hover, #back-to-featured2:hover, #back-to-featured3:hover, #calculate:hover,#order:hover,#color-chart:hover,#add-paint-type:hover,#galleryBtn:hover,#reset:hover {
+#back-to-featured:hover, #back-to-featured2:hover, #back-to-featured3:hover, #calculate:hover,#order:hover,#color-chart:hover,#add-paint-type:hover,#galleryBtn:hover,#reset:hover ,#galleryBtn2:hover{
     background-color: yellow;
     color: rgb(123,0,88);
     /*transform: scale(1.1) ;*/
@@ -640,6 +640,18 @@ footer {
        height: 100%;
        object-fit:cover;
    }   
+   
+   #back-to-featured,#back-to-featured2,#back-to-featured3{
+     position: relative;
+     top:30px;
+     left:30px;
+     
+   }
+   #galleryBtn,#galleryBtn2{
+     position: relative;
+     top:-30px;
+     left:30px;
+   }
 }
 
 /* Animations */
