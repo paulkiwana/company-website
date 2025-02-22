@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header class="header">
+                <div class="container">
+                        <a href="./index.html"> <div class="logo">
+                                <img src="./assets/logo3.png" alt="Jose River Coating Logo">
+                            </div>
+                        </a>
+                    <div class="company-info">
+                        <h1 class="name">Jose River Coating Inv Ltd</h1>
+                        <p class="slogan">Reliable Coatings</p>
+                    </div>
+                    <nav class="header-nav">
+                            <a href="./index.html">Home</a>
+                            <a href="./interior.html">Interior Paints</a>
+                            <a href="./texture.html">Texture paints</a>
+                        </nav>
+                        <button class="toggle-btn" aria-label="Toggle Menu">☰</button>
+                    </div>
+                </header>
+            
+                <nav class="sidebar" id="sidebar">
+                    <a href="#home">Home</a>
+                    <a href="./interior.html">Interior Paints</a>
+                    <a href="./texture.html">Texture paints</a>
+                </nav>
+
+    <main class="content">
+            
+            <section id="home" class="hero">
+                    <div class="product-hero">
+                            <img src="./assets/exterior_paint.jpg" alt="interior paint">
+                        </div>
+            </section>
+        <section id="exterior" style="display:flex" class="container section">
+        <div class="paintType">
+        <h3>Primer</h3>
+        <img src="./assets/primer.jpg" onclick="openModal(this.src)">
+        <p>Primer paint is special coating used on surfaces before painting. It is designed improve adhesion of paint to the surface, Increase paints durability, offer additional protection for the material being painted ,acts as a sealer for porous surfaces and act as a stain blocker for walls</p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Weather Guard</h3>
+        <img src="./assets/Weather_Guard.jpg" onclick="openModal(this.src)">
+        <p>Weather guard is a type of exterior paint that offers a high-quality finish that can withstand various weather conditions.Its a pure acrylic copolymer emulsion providing maximum protection for exterior walls of homes, hotels and professional buildings</p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Undercoat</h3>
+        <img src="./assets/Undercoat.jpg" onclick="openModal(this.src)">
+        <p>This can be used on interior and exterior concrete, plaster, wood, metal. It prepares the surface an ideally smooth foundation for the finishing coats.
+        it can be applied by brush, rollers or spray gun.
+        </p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Matt Emulsion</h3>
+        <img src="./assets/Matt_Emulsion.jpg" onclick="openModal(this.src)">
+        <p>It's easy to apply and produces a beautiful matt finish, which hides all surface impactions. Matt Emulsion can be used on interior and exterior surfaces like; conccrete, plaster, bricks,
+        and even previously painted walls. It can also be applied brush, rollers, and spray.
+        </p>
+        </div>
+        
+        </section>
+        <button id="back-to-featured2"  style="display:none">Back</button>
+        
+       
+        <div id="imageModal" class="modal" onclick="closeModal()">
+           <div style="background-color:cream; padding:10px;">
+            <img id="modalImage" class="modal-content">
+            <button id="bb">back</button>
+           </div>
+            
+        </div>
+    </main>
+        <script src="scripts.js"></script>
+</body>
+<footer>
+        <p>Copyright &copy; 2025 Jose River Coating Inv Ltd</p>
+      </footer>
+</html>

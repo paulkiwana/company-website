@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <header class="header">
+                <div class="container">
+                        <a href="./index.html"> <div class="logo">
+                                <img src="./assets/logo3.png" alt="Jose River Coating Logo">
+                            </div>
+                        </a>
+                    <div class="company-info">
+                        <h1 class="name">Jose River Coating Inv Ltd</h1>
+                        <p class="slogan">Reliable Coatings</p>
+                    </div>
+                    <nav class="header-nav">
+                            <a href="./index.html">Home</a>
+                            <a href="./interior.html">Interior Paints</a>
+                            <a href="./exterior.html">Exterior paints</a>
+                        </nav>
+                        <button class="toggle-btn" aria-label="Toggle Menu">☰</button>
+                    </div>
+                </header>
+            
+                <nav class="sidebar" id="sidebar">
+                    <a href="#home">Home</a>
+                    <a href="./interior.html">Interior Paints</a>
+                    <a href="./exterior.html">Exterior paints</a>
+                </nav>
+    <main class="content">
+            <section id="home" class="hero">
+                    <div class="product-hero">
+                            <img src="./assets/texture_paint.jpg" alt="interior paint">
+                        </div>
+            </section>
+   
+        
+        <section id="texture" style="display:flex" class="container section">
+        <div class="paintType">
+        <h3>Texture Emprofile(Paste)</h3>
+        <img src="./assets/Emprofile_paste.jpg" onclick="openModal(this.src)">
+        <p>A very hard washable internal and external plasticized coating based on acrylic resins, using fine crushed aggregates and inorganic color fast pigments creating
+        a texture with varying degrees of vertical stiations. Together with our acrylic glaze finish, the texture will self maintain as dirt and residues can be 
+        washed away easily</p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Ritmix(Rough and tough)</h3>
+        <img src="./assets/Ritmix.jpg" onclick="openModal(this.src)">
+        <p>An acrylic resin based texture, which is engineered as a rough finish with excellent resistant qualities. Because the pigments fully dispersed within
+        the texture, this product maintains color and finish for many years. Together with our acrylic glaze finish, the texture will self maintain
+        as dirt and residues can be washed away easily</p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Glaze</h3>
+        <img src="./assets/Glaze.jpg" onclick="openModal(this.src)">
+        <p>Glaze paint is a special kind of paint that is used to add texture and depth to surface. It is a semi-transparent layer applied over a complementary solid color
+        or basecoat.It is used to create rich, iridescent colors and used for decorative walls, art and furniture </p>
+        </div>
+         
+        <div class="paintType">
+        <h3>Stone Finish</h3>
+        <img src="./assets/Stone_finish.jpg" onclick="openModal(this.src)">
+        <p>An extremely superior coating using natural quartzite in sizes ranging from 1mm to 3mm embedded in an enhanced acrylic blinder which is extremely hard and 
+        durable producing an everlasting stone look</p>
+        </div>
+        
+        <div class="paintType">
+        <h3>Emcourse</h3>
+        <img src="./assets/Emcourse.jpg" onclick="openModal(this.src)">
+        <p>A heavy body heavy textured coating for internal and external use. It exhibits excellent obliteration properties and flexibility making it ideal to cover hairline cracks and poor plasterwork. Together with our acrylic glaze finish, the texture will self maintain as dirt and residues can be washed away easily</p>
+        </div>
+        
+        </section>
+        <button id="back-to-featured3"  style="display:none">Back</button>
+        
+        <div id="imageModal" class="modal" onclick="closeModal()">
+           <div style="background-color:cream; padding:10px;">
+            <img id="modalImage" class="modal-content">
+            <button id="bb">back</button>
+           </div>
+            
+        </div>
+    </main>
+        <script src="scripts.js"></script>
+</body>
+<footer>
+        <p>Copyright &copy; 2025 Jose River Coating Inv Ltd</p>
+      </footer>
+</html>
