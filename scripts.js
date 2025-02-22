@@ -68,7 +68,7 @@
         fadeInObserver.observe(section);
     });
 });
-// interior product list logic
+/*/ interior product list logic
 const products = document.getElementById('products')
 const interior = document.getElementById('interior')
 const intBtn = document.querySelector('.interior')
@@ -119,8 +119,8 @@ backBtn3.addEventListener("click", ()=>{
     products.style.display = "block";
     backBtn3.style.display = "none";
     texture.style.display = 'none';
-})
-//gallery logic
+})*/
+/*/gallery logic
 const ideal = document.getElementById('ideal')
 const residentials = document.getElementById('residentials')
 const gallery = document.getElementById('gallery')
@@ -150,7 +150,7 @@ galleryBtn2.addEventListener('click',()=>{
     gallery2.style.display = 'none'
     projects.style.display = 'block'
     galleryBtn2.style.display = 'none'
-})
+})*/
 
 //CALCULATOR LOGIC... it's hella big :(
     const paintPrices = {
